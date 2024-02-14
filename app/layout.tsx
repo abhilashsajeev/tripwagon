@@ -4,8 +4,8 @@ import { MantineProvider, ColorSchemeScript } from '@mantine/core';
 import { theme } from '../theme';
 
 export const metadata = {
-  title: 'Mantine Next.js template',
-  description: 'I am using Mantine with Next.js!',
+  title: 'TripWagon | Kerala Taxi Cab Services',
+  description: 'High Quality and Most Affordable tour cabs services kerala',
 };
 
 export default function RootLayout({ children }: { children: any }) {
