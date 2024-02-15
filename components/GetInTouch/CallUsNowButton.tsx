@@ -12,19 +12,19 @@ export default function CallUsNowButtons() {
             component={Link}
             variant="filled"
             color="green"
-            href="tel:+917907180670"
+            href="tel:+919539295705"
             target="_blank"
           >
-            CALL US +917907180670
+            CALL US +919539295705
           </Button>
           <Button
             component={Link}
             variant="filled"
             color="green"
-            href="tel:+917907180670"
+            href="tel:+917593921784"
             target="_blank"
           >
-            CALL US +917907180670
+            CALL US +917593921784
           </Button>
         </Group>
       </Center>
