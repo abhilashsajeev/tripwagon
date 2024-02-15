@@ -5,6 +5,8 @@ import { MantineProvider, ColorSchemeScript } from '@mantine/core';
 import { theme } from '../theme';
 import { HeaderSearch } from '@/components/Header/Header';
 import { FooterLinks } from '@/components/FooterLinks/FooterLinks';
+import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from '@vercel/analytics/react';
 import WhatsAppFAB from '@/components/FAB/WhatsAppButton';
 
 export const metadata = {
@@ -26,11 +28,13 @@ export default function RootLayout({ children }: { children: any }) {
       </head>
       <body>
         <MantineProvider theme={theme}>
+          <SpeedInsights />
           <HeaderSearch />
           {children}
           <WhatsAppFAB />
           <FooterLinks />
         </MantineProvider>
+        <Analytics />
       </body>
     </html>
   );
