@@ -4,6 +4,7 @@ export interface Traveller {
   id: string;
   name: string;
   extra_per_km: number;
+  description: string;
   pax: number;
   image: string;
 }
