@@ -65,8 +65,8 @@ export function FooterLinks() {
         <div className={classes.logo}>
           <Image
             src="/logo.webp"
-            width={100}
-            height={100}
+            width={120}
+            height={120}
             about="TripWagon Logo"
             alt="Trip Wagon Logo"
           />

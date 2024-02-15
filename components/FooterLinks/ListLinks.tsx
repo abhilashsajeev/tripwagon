@@ -10,7 +10,7 @@ export default function ListLinks() {
       <Divider orientation="vertical" />
       <Link href="#">Kochi Taxi Services</Link>
       <Divider orientation="vertical" />
-      <Link href="#">Kerala Tempo Traveller</Link>
+      <Link href="/traveller">Kerala Tempo Traveller</Link>
       <Divider orientation="vertical" />
       <Link href="#">Urbania Rentals</Link>
       <Divider orientation="vertical" />
@@ -20,7 +20,7 @@ export default function ListLinks() {
       <Divider orientation="vertical" />
       <Link href="#">Kerala Bus Rentals</Link>
       <Divider orientation="vertical" />
-      <Link href="#">Sabarimala</Link>
+      <Link href="/sabarimala">Sabarimala</Link>
       <Divider orientation="vertical" />
       <Link href="#">Taxi Services</Link>
       <Divider orientation="vertical" />
