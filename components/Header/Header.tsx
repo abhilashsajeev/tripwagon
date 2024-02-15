@@ -36,7 +36,13 @@ export function HeaderSearch() {
     <header className={classes.header}>
       <div className={classes.inner}>
         <Group>
-          <Burger opened={opened} onClick={toggle} size="sm" hiddenFrom="sm" />
+          <Burger
+            opened={opened}
+            onClick={toggle}
+            size="sm"
+            hiddenFrom="sm"
+            aria-label="Open Menu"
+          />
           <Image src="/logo.webp" height={60} width={60} alt="Image background" />
           <Drawer opened={opened} onClose={close} title="Menu">
             <List spacing="xs" size="sm" center>

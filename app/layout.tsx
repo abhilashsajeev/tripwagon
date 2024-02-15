@@ -5,6 +5,7 @@ import { MantineProvider, ColorSchemeScript } from '@mantine/core';
 import { theme } from '../theme';
 import { HeaderSearch } from '@/components/Header/Header';
 import { FooterLinks } from '@/components/FooterLinks/FooterLinks';
+import WhatsAppFAB from '@/components/FAB/WhatsAppButton';
 
 export const metadata = {
   title: 'TripWagon | Kerala Taxi Cab Services',
@@ -27,6 +28,7 @@ export default function RootLayout({ children }: { children: any }) {
         <MantineProvider theme={theme}>
           <HeaderSearch />
           {children}
+          <WhatsAppFAB />
           <FooterLinks />
         </MantineProvider>
       </body>
