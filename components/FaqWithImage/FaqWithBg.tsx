@@ -28,28 +28,94 @@ export default function FaqWithBg() {
           }
         >
           <Accordion.Item className={classes.item} value="reset-password">
-            <Accordion.Control>How can I reset my password?</Accordion.Control>
-            <Accordion.Panel>{placeholder}</Accordion.Panel>
+            <Accordion.Control>
+              <b>Is it required to book a taxi in advance?</b>
+            </Accordion.Control>
+            <Accordion.Panel>
+              Booking a taxi in advance has many benefits. It's likely that no cabs would be
+              available at that particular time as the seasonal rush is completely unpredictable in
+              Kerala. So, in that case, booking a cab in advance will save you some time and fetch
+              you safe ride with happy memories.
+            </Accordion.Panel>
           </Accordion.Item>
 
           <Accordion.Item className={classes.item} value="another-account">
-            <Accordion.Control>Can I create more that one account?</Accordion.Control>
-            <Accordion.Panel>{placeholder}</Accordion.Panel>
+            <Accordion.Control>
+              <b>What are safety measures for covid-19?</b>
+            </Accordion.Control>
+            <Accordion.Panel>
+              Our cabs are approved partitioned (“cabin separated”) sanitized cars (“fumigated after
+              each trip”) which are specifically suited as per the present situation prevailing due
+              to this pandemic.
+            </Accordion.Panel>
           </Accordion.Item>
 
           <Accordion.Item className={classes.item} value="newsletter">
-            <Accordion.Control>How can I subscribe to monthly newsletter?</Accordion.Control>
-            <Accordion.Panel>{placeholder}</Accordion.Panel>
+            <Accordion.Control>
+              <b>What is the travel time from kochi to munnar?</b>
+            </Accordion.Control>
+            <Accordion.Panel>
+              Travel time from Cochin to Munnar is approximately 4 hours by road
+            </Accordion.Panel>
           </Accordion.Item>
 
           <Accordion.Item className={classes.item} value="credit-card">
-            <Accordion.Control>Do you store credit card information securely?</Accordion.Control>
-            <Accordion.Panel>{placeholder}</Accordion.Panel>
+            <Accordion.Control>
+              <b>Which is better Munnar or Alleppy?</b>
+            </Accordion.Control>
+            <Accordion.Panel>
+              Munnar and Alleppey are completely different destinations. Munnar is all about Hill
+              station where as Alleppey is best famous for backwaters and houseboats
+            </Accordion.Panel>
           </Accordion.Item>
 
           <Accordion.Item className={classes.item} value="payment">
-            <Accordion.Control>What payment systems to you work with?</Accordion.Control>
-            <Accordion.Panel>{placeholder}</Accordion.Panel>
+            <Accordion.Control>
+              <b>How taxi fare is calculated in kerala?</b>
+            </Accordion.Control>
+            <Accordion.Panel>
+              Our rates are calculated based only on the number of days and not based on any travel
+              plan/schedule, thereby providing customers the freedom to visit any places of their
+              choice.
+            </Accordion.Panel>
+          </Accordion.Item>
+          <Accordion.Item className={classes.item} value="km">
+            <Accordion.Control>
+              <b>How is km calculated in kerala?</b>
+            </Accordion.Control>
+            <Accordion.Panel>
+              Our Km is calculated from Cochin Airport to Cochin Airport
+            </Accordion.Panel>
+          </Accordion.Item>
+          <Accordion.Item className={classes.item} value="book">
+            <Accordion.Control>
+              <b>How can I book taxi to Cochin Airport?</b>
+            </Accordion.Control>
+            <Accordion.Panel>
+              You can call us @ <a href="tel:+9175393921784">75393921784</a> or whats app with your
+              details to undertake immediate booking with the best cab and experienced driver to
+              make your holidays memorable.
+            </Accordion.Panel>
+          </Accordion.Item>
+          <Accordion.Item className={classes.item} value="road">
+            <Accordion.Control>
+              <b>How is the road from Cochin to Munnar?</b>
+            </Accordion.Control>
+            <Accordion.Panel>
+              The road trip from Cochin to Munnar is extremely beautiful and scenic all the way with
+              lush green uphill ride. As we climb uphill, the roads will be bit narrow and curvy as
+              its common among hill stations
+            </Accordion.Panel>
+          </Accordion.Item>
+          <Accordion.Item className={classes.item} value="safe">
+            <Accordion.Control>
+              <b>Is it safe to travel from Kochi to Munnar at night?</b>
+            </Accordion.Control>
+            <Accordion.Panel>
+              It is not advisable to travel by road to munnar at night due to fog, curling roads &
+              wildlife. moreover by travelling at night, one will miss out all the scenic beauty and
+              waterfalls along the way.
+            </Accordion.Panel>
           </Accordion.Item>
         </Accordion>
       </Container>

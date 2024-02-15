@@ -14,6 +14,7 @@
 .title {
   color: var(--mantine-color-white);
   font-size: 52px;
+
   font-family:
     Greycliff CF,
     var(--mantine-font-family);
@@ -25,6 +26,7 @@
   border-bottom: 0;
   border-radius: var(--mantine-radius-md);
   box-shadow: var(--mantine-shadow-lg);
+
   overflow: hidden;
 }
 
@@ -32,7 +34,7 @@
   font-size: var(--mantine-font-size-lg);
   padding: var(--mantine-spacing-lg) var(--mantine-spacing-xl);
   color: var(--mantine-color-black);
-
+  font-weight: 600;
   @mixin hover {
     background-color: transparent;
   }

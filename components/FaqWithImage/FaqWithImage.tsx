@@ -21,25 +21,28 @@ export default function FaqWithImage() {
 
             <Accordion chevronPosition="right" defaultValue="reset-password" variant="separated">
               <Accordion.Item className={classes.item} value="reset-password">
-                <Accordion.Control>How can I reset my password?</Accordion.Control>
+                <Accordion.Control>Is it required to book a taxi in advance?</Accordion.Control>
                 <Accordion.Panel>{placeholder}</Accordion.Panel>
               </Accordion.Item>
 
               <Accordion.Item className={classes.item} value="another-account">
-                <Accordion.Control>Can I create more that one account?</Accordion.Control>
-                <Accordion.Panel>{placeholder}</Accordion.Panel>
+                <Accordion.Control>What is the travel time from kochi to munnar?</Accordion.Control>
+                <Accordion.Panel>
+                  Travel time from Cochin to Munnar is approximately 4 hours by road
+                </Accordion.Panel>
               </Accordion.Item>
 
               <Accordion.Item className={classes.item} value="newsletter">
-                <Accordion.Control>How can I subscribe to monthly newsletter?</Accordion.Control>
+                <Accordion.Control>What are the safety measures for covid-19?</Accordion.Control>
                 <Accordion.Panel>{placeholder}</Accordion.Panel>
               </Accordion.Item>
 
               <Accordion.Item className={classes.item} value="credit-card">
-                <Accordion.Control>
-                  Do you store credit card information securely?
-                </Accordion.Control>
-                <Accordion.Panel>{placeholder}</Accordion.Panel>
+                <Accordion.Control>Which is better Munnar or Alleppy?</Accordion.Control>
+                <Accordion.Panel>
+                  Munnar and Alleppey are completely different destinations. Munnar is all about
+                  Hill station where as Alleppey is best famous for backwaters and houseboats
+                </Accordion.Panel>
               </Accordion.Item>
             </Accordion>
           </Grid.Col>
