@@ -60,7 +60,9 @@ export function FeaturesGrid() {
 
   return (
     <Container className={classes.wrapper}>
-      <Title className={classes.title}>Make Your travel effortless with our services</Title>
+      <Title className={classes.title}>
+        Kerala Taxi Packages-Kochi Taxi-Kerala Tempo Traveller
+      </Title>
 
       <Container size={560} p={0}>
         <Text size="sm" className={classes.description}>

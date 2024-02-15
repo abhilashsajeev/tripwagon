@@ -4,6 +4,8 @@ import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram } from '@tabler/
 
 import classes from './FooterLinks.module.css';
 import Image from 'next/image';
+import ListLinks from './ListLinks';
+import Link from 'next/link';
 
 const data = [
   {
@@ -63,8 +65,8 @@ export function FooterLinks() {
         <div className={classes.logo}>
           <Image
             src="/logo.webp"
-            width={80}
-            height={80}
+            width={100}
+            height={100}
             about="TripWagon Logo"
             alt="Trip Wagon Logo"
           />
@@ -80,16 +82,40 @@ export function FooterLinks() {
         </Text>
 
         <Group gap={0} className={classes.social} justify="flex-end" wrap="nowrap">
-          <ActionIcon size="lg" color="gray" variant="subtle">
+          <ActionIcon
+            size="lg"
+            color="gray"
+            variant="subtle"
+            component={Link}
+            href="https://www.youtube.com/channel/UCq8LnG9DHyyHnCJtLFAQUcg"
+            target="_blank"
+          >
             <IconBrandTwitter style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
           </ActionIcon>
-          <ActionIcon size="lg" color="gray" variant="subtle">
+          <ActionIcon
+            size="lg"
+            color="gray"
+            variant="subtle"
+            component={Link}
+            href="https://www.youtube.com/channel/UCq8LnG9DHyyHnCJtLFAQUcg"
+            target="_blank"
+          >
             <IconBrandYoutube style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
           </ActionIcon>
-          <ActionIcon size="lg" color="gray" variant="subtle">
+          <ActionIcon
+            size="lg"
+            color="gray"
+            variant="subtle"
+            component={Link}
+            href="https://www.youtube.com/channel/UCq8LnG9DHyyHnCJtLFAQUcg"
+            target="_blank"
+          >
             <IconBrandInstagram style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
           </ActionIcon>
         </Group>
+      </Container>
+      <Container>
+        <ListLinks />
       </Container>
     </footer>
   );

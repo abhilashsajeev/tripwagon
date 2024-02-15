@@ -21,13 +21,14 @@ export function HeroImageBackground() {
 
         <div className={classes.controls}>
           <Button className={classes.control} variant="white" size="lg">
-            Get started
+            Contact Us
           </Button>
-          <a href="/pricing">
-            <Button className={cx(classes.control, classes.secondaryControl)} size="lg">
+
+          <Button className={cx(classes.control, classes.secondaryControl)} size="lg">
+            <a href="/pricing" style={{ textDecoration: 'none', color: '#fff' }}>
               View Rates
-            </Button>
-          </a>
+            </a>
+          </Button>
         </div>
       </div>
     </div>

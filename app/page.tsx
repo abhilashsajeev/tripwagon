@@ -1,7 +1,4 @@
-import { HeaderTabs } from '@/components/HeaderTabs/HeaderTabs';
-import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
 import { HeroImageBackground } from '../components/hero/HeroComponent';
-import { FooterLinks } from '@/components/FooterLinks/FooterLinks';
 import { FeaturesGrid } from '@/components/Features/FeaturesGrid';
 import WhatsAppFAB from '@/components/FAB/WhatsAppButton';
 import { GetInTouch } from '@/components/GetInTouch/GetInTouch';
@@ -20,7 +17,6 @@ export default function HomePage() {
         <GetInTouch />
       </Suspense>
       <StatsGroup />
-      <FooterLinks />
     </>
   );
 }

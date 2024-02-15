@@ -1,7 +1,10 @@
 import '@mantine/core/styles.css';
+import '@mantine/carousel/styles.css';
 import React from 'react';
 import { MantineProvider, ColorSchemeScript } from '@mantine/core';
 import { theme } from '../theme';
+import { HeaderSearch } from '@/components/Header/Header';
+import { FooterLinks } from '@/components/FooterLinks/FooterLinks';
 
 export const metadata = {
   title: 'TripWagon | Kerala Taxi Cab Services',
@@ -14,13 +17,18 @@ export default function RootLayout({ children }: { children: any }) {
       <head>
         <ColorSchemeScript />
         <link rel="shortcut icon" href="/favicon.svg" />
+        <link rel="preload" href="/cars.webp" as="image" />
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
         />
       </head>
       <body>
-        <MantineProvider theme={theme}>{children}</MantineProvider>
+        <MantineProvider theme={theme}>
+          <HeaderSearch />
+          {children}
+          <FooterLinks />
+        </MantineProvider>
       </body>
     </html>
   );
