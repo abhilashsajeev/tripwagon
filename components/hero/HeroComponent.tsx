@@ -1,6 +1,7 @@
 import cx from 'clsx';
 import { Title, Text, Container, Button, Overlay } from '@mantine/core';
 import classes from './HeroComponent.module.css';
+import Link from 'next/link';
 
 export function HeroImageBackground() {
   return (
@@ -20,14 +21,23 @@ export function HeroImageBackground() {
         </Container>
 
         <div className={classes.controls}>
-          <Button className={classes.control} variant="white" size="lg">
+          <Button
+            className={classes.control}
+            variant="white"
+            size="lg"
+            component={Link}
+            href="#contact"
+          >
             Contact Us
           </Button>
 
-          <Button className={cx(classes.control, classes.secondaryControl)} size="lg">
-            <a href="/pricing" style={{ textDecoration: 'none', color: '#fff' }}>
-              View Rates
-            </a>
+          <Button
+            className={cx(classes.control, classes.secondaryControl)}
+            size="lg"
+            component={Link}
+            href="/rentals"
+          >
+            View Rates
           </Button>
         </div>
       </div>

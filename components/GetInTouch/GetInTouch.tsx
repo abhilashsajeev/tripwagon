@@ -7,7 +7,7 @@ import classes from './GetInTouch.module.css';
 export function GetInTouch() {
   return (
     <Paper shadow="md" radius="lg">
-      <div className={classes.wrapper}>
+      <div className={classes.wrapper} id="contact">
         <div className={classes.contacts} style={{ backgroundImage: `url(${bg.src})` }}>
           <Text fz="lg" fw={700} className={classes.title} c="#fff">
             Contact information
