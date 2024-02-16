@@ -1,6 +1,7 @@
 'use client';
 import { Text, Container, ActionIcon, Group, rem } from '@mantine/core';
 import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram } from '@tabler/icons-react';
+import { FaTripadvisor } from 'react-icons/fa';
 
 import classes from './FooterLinks.module.css';
 import Image from 'next/image';
@@ -111,6 +112,17 @@ export function FooterLinks() {
             target="_blank"
           >
             <IconBrandInstagram style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
+          </ActionIcon>
+
+          <ActionIcon
+            size="lg"
+            color="gray"
+            variant="subtle"
+            component={Link}
+            href="https://www.tripadvisor.in/Profile/tripwagon"
+            target="_blank"
+          >
+            <FaTripadvisor style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
           </ActionIcon>
         </Group>
       </Container>

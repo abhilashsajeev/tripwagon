@@ -26,3 +26,8 @@ export const getRateTableForId = async (id: string) => {
   const result: RateList[] | null = await kv.get(id);
   return result;
 };
+
+export async function getTravelerCarouselImages(id?: string) {
+  const result: any = await kv.get('traveller_images');
+  return id ? result?.filter((i: any) => i.id === id) : result;
+}

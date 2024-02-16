@@ -1,108 +1,109 @@
 'use client';
 import { Table, Progress, Anchor, Text, Group, Button, Container } from '@mantine/core';
 import classes from './TarifTable.module.css';
+import Link from 'next/link';
 
 const data = [
   {
     vehicle: 'Swift Dzire/Toyota Etios/Similar',
 
     pax: 3,
-    id: 1,
+    id: '/package#sedan_taxi',
   },
   {
     vehicle: 'Suzuki Ertiga',
-    id: 2,
+    id: '/package#suzuki_ertiga',
     pax: 5,
   },
   {
     vehicle: 'Toyota Innova',
     pax: 6,
-    id: 3,
+    id: '/package#innova',
   },
   {
     vehicle: 'Toyota Innova Crysta',
     pax: 6,
-    id: 4,
+    id: '/package#crysta',
   },
   {
     vehicle: 'Ultra Luxury Traveller',
     pax: 10,
-    id: 5,
+    id: '/traveller#traveller_ultra_luxury_08',
   },
   {
     vehicle: 'Premium Tempo Traveller',
     pax: 10,
-    id: 6,
+    id: '/traveller#traveller_premium_10',
   },
   {
     vehicle: 'Premium Tempo Traveller',
     pax: 12,
-    id: 7,
+    id: '/traveller#traveller_premium_12',
   },
   {
     vehicle: 'Executive Tempo Traveller',
     pax: 12,
-    id: 8,
+    id: '/traveller#traveller_executive_12',
   },
   {
     vehicle: 'Luxury Urbania',
     pax: 15,
-    id: 9,
+    id: '/traveller#urbania_15',
   },
   {
     vehicle: 'Premium Urbania',
     pax: 15,
-    id: 10,
+    id: '/traveller#urbania_15',
   },
   {
     vehicle: 'Premium Tempo Traveller',
     pax: 17,
-    id: 11,
+    id: '/traveller#traveller_premium_17',
   },
   {
     vehicle: 'Executive Tempo Traveller',
     pax: 17,
-    id: 12,
+    id: '/traveller#traveller_executive_17',
   },
   {
     vehicle: 'Premium Tempo Traveller AC',
     pax: 20,
-    id: 13,
+    id: '/traveller#traveller_premium_20',
   },
   {
     vehicle: 'Executive Tempo Traveller AC',
     pax: 20,
-    id: 14,
+    id: '/traveller#traveller_executive_20',
   },
   {
     vehicle: 'Premium Tempo Traveller AC',
     pax: 26,
-    id: 16,
+    id: '/traveller#traveller_premium_20',
   },
   {
     vehicle: 'Executive Tempo Traveller AC',
     pax: 26,
-    id: 17,
+    id: '/traveller#traveller_executive_17',
   },
   {
     vehicle: 'Benz Mini Coach AC',
     pax: 26,
-    id: 18,
+    id: '/bus#benz_mini',
   },
   {
     vehicle: 'Executive Mini Coach AC',
     pax: 35,
-    id: 19,
+    id: '/bus#benz_mini_executive',
   },
   {
     vehicle: 'Luxury Benz Glider AC',
     pax: 45,
-    id: 20,
+    id: '/bus#benz_glider',
   },
   {
     vehicle: 'Luxury Benz Multi Glider AC',
     pax: 53,
-    id: 21,
+    id: '/bus#benz_multi_glider',
   },
 ];
 
@@ -113,7 +114,7 @@ export function TariffTable() {
         <Table.Td>{row.vehicle}</Table.Td>
         <Table.Td>{row.pax}</Table.Td>
         <Table.Td>
-          <Button variant="filled" color="violet">
+          <Button variant="filled" color="violet" component={Link} href={row.id}>
             Select
           </Button>
         </Table.Td>

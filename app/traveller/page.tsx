@@ -1,11 +1,19 @@
-import getAllTravelerInsideImages, { RateList, Traveller } from '@/actions/traveller';
+import getAllTravelerInsideImages, {
+  RateList,
+  Traveller,
+  getTravelerCarouselImages,
+} from '@/actions/traveller';
+import ServerCarousel from '@/components/Carousel/ServerCarousel';
 import CallUsNowButtons from '@/components/GetInTouch/CallUsNowButton';
 import RateTableComponent from '@/components/RateTable/RateTable';
+import TempoTravellerHeading from '@/components/TempTravellerHeading/TempoTravellerHeading';
 
 export default async function Pricing() {
   const results = await getAllTravelerInsideImages();
+  const imagesList = await getTravelerCarouselImages();
   const components = results?.map((item: Traveller) => (
-    <div key={item.id}>
+    <div key={item.id} id={item.id}>
+      <ServerCarousel data={imagesList.filter((i: any) => i.id === item.id)[0]?.list} />
       <RateTableComponent
         key={item.id}
         id={item.id}
@@ -15,5 +23,10 @@ export default async function Pricing() {
       <CallUsNowButtons />
     </div>
   ));
-  return <>{components}</>;
+  return (
+    <>
+      <TempoTravellerHeading />
+      {components}
+    </>
+  );
 }

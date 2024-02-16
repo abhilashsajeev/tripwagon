@@ -2,6 +2,7 @@
 import { rem, useMantineTheme, Image } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
 import { Carousel } from '@mantine/carousel';
+import classes from './TaxiCarousel.module.css';
 
 const data = [
   {
@@ -51,7 +52,7 @@ export default function TaxiCarousel() {
   const theme = useMantineTheme();
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
   const slides = data.map((item) => (
-    <Carousel.Slide key={item.title}>
+    <Carousel.Slide key={item.title} className={classes.imageContainer}>
       <Image height={250} src={item.image} alt={item.title} />
     </Carousel.Slide>
   ));

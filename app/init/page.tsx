@@ -1,6 +1,9 @@
 import {
+  AddDefaultValuesForCars,
+  AddDefaultValuesForCarsRate,
   AddDefaultValuesForTraveller,
   AddDefaultValuesForTravellerRate,
+  AddImagesForCarousel,
 } from '@/actions/defaultKv';
 import getAllTravelerInsideImages, { getRateTableForId } from '@/actions/traveller';
 import { Button, Container, Stack } from '@mantine/core';
@@ -8,6 +11,9 @@ import { Button, Container, Stack } from '@mantine/core';
 export default async function Defaultpage() {
   await AddDefaultValuesForTravellerRate();
   await AddDefaultValuesForTraveller();
+  await AddDefaultValuesForCars();
+  await AddDefaultValuesForCarsRate();
+  await AddImagesForCarousel();
 
   console.log('tragvasdflerer ', await getAllTravelerInsideImages());
   console.log('traveller_premium_17', await getRateTableForId('traveller_premium_17'));
