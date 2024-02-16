@@ -4,41 +4,75 @@ import Link from 'next/link';
 export default function ListLinks() {
   return (
     <Group>
-      <Link href="#">Home</Link>
+      <Link href="/" role="link">
+        Home
+      </Link>
       <Divider orientation="vertical" />
-      <Link href="#">Kerala Taxi Services</Link>
+      <Link href="/rentals" role="link">
+        Kerala Taxi Rentals
+      </Link>
       <Divider orientation="vertical" />
-      <Link href="#">Kochi Taxi Services</Link>
+      <Link href="#" role="link">
+        Kochi Taxi Services
+      </Link>
       <Divider orientation="vertical" />
-      <Link href="/traveller">Kerala Tempo Traveller</Link>
+      <Link href="/traveller" role="link">
+        Kerala Tempo Traveller
+      </Link>
       <Divider orientation="vertical" />
-      <Link href="#">Urbania Rentals</Link>
+      <Link href="/urbania" role="link">
+        Urbania Rentals
+      </Link>
       <Divider orientation="vertical" />
-      <Link href="#">Kochi Airport Taxi</Link>
+      <Link href="/airport" role="link">
+        Kochi Airport Taxi
+      </Link>
       <Divider orientation="vertical" />
-      <Link href="#">Alleppy House boats</Link>
+      <Link href="/houseboat" role="link">
+        Alleppy House boats
+      </Link>
       <Divider orientation="vertical" />
-      <Link href="#">Kerala Bus Rentals</Link>
+      <Link href="/bus" role="link">
+        Kerala Bus Rentals
+      </Link>
       <Divider orientation="vertical" />
       <Link href="/sabarimala">Sabarimala</Link>
       <Divider orientation="vertical" />
-      <Link href="#">Taxi Services</Link>
+      <Link href="/taxi" role="link">
+        Taxi Services
+      </Link>
       <Divider orientation="vertical" />
-      <Link href="#">Testimonials</Link>
+      <Link href="/testimonials" role="link">
+        Testimonials
+      </Link>
       <Divider orientation="vertical" />
-      <Link href="/gallery">Gallery</Link>
+      <Link href="/gallery" role="link">
+        Gallery
+      </Link>
       <Divider orientation="vertical" />
-      <Link href="#">Link to Us</Link>
+      <Link href="#" role="link">
+        Link to Us
+      </Link>
       <Divider orientation="vertical" />
-      <Link href="/terms">Terms and Conditions</Link>
+      <Link href="/terms" role="link">
+        Terms and Conditions
+      </Link>
       <Divider orientation="vertical" />
-      <Link href="#">Usefull links</Link>
+      <Link href="#" role="link">
+        Usefull links
+      </Link>
       <Divider orientation="vertical" />
-      <Link href="#">Other links</Link>
+      <Link href="#" role="link">
+        Other links
+      </Link>
       <Divider orientation="vertical" />
-      <Link href="#">Latest news</Link>
+      <Link href="#" role="link">
+        Latest news
+      </Link>
       <Divider orientation="vertical" />
-      <Link href="#">Contact Us</Link>
+      <Link href="#" role="link">
+        Contact Us
+      </Link>
       <Divider orientation="vertical" />
     </Group>
   );
