@@ -122,7 +122,7 @@ export function FooterLinks() {
             href="https://www.tripadvisor.in/Profile/tripwagon"
             target="_blank"
           >
-            <FaTripadvisor style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
+            <FaTripadvisor style={{ width: rem(18), height: rem(18) }} />
           </ActionIcon>
         </Group>
       </Container>
