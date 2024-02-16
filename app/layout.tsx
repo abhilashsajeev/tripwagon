@@ -23,7 +23,7 @@ export default function RootLayout({ children }: { children: any }) {
         <link rel="preload" href="/cars.webp" as="image" />
         <meta
           name="viewport"
-          content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
+          content="minimum-scale=1, maximum-scale=2, initial-scale=1, width=device-width, user-scalable=no"
         />
       </head>
       <body>
