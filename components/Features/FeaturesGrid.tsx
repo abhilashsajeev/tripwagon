@@ -11,8 +11,7 @@ export const MOCKDATA = [
   {
     icon: IconUser,
     title: 'Privacy focused',
-    description:
-      'People say it can run at the same speed as lightning striking, Its icy body is so cold, it will not melt even if it is immersed in magma',
+    description: 'We give priority to your privacy. Our drivers are well mannered and behaved.',
   },
   {
     icon: IconCookie,

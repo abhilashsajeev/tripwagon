@@ -3,6 +3,8 @@ import { Traveller } from '@/actions/traveller';
 import CallUsNowButtons from '@/components/GetInTouch/CallUsNowButton';
 import RateTableCar from '@/components/RateTable/RateTableCar';
 
+import Image from 'next/image';
+
 export default async function Pricing() {
   const results = await getAllCars();
   const components = results?.map((item: Traveller) => (

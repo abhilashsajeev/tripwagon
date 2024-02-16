@@ -12,17 +12,17 @@ const data = [
   {
     title: 'Kerala Cabs',
     links: [
-      { label: 'Features', link: '#' },
-      { label: 'Pricing', link: '#' },
-      { label: 'Support', link: '#' },
-      { label: 'Forums', link: '#' },
+      { label: 'Home', link: '/' },
+      { label: 'Taxi Rentals', link: '/rentals' },
+      { label: 'Sabarimala', link: '/sabarimala' },
+      { label: 'Gallery', link: '/gallery' },
     ],
   },
   {
-    title: 'Sabarimala',
+    title: 'Kerala Traveller',
     links: [
-      { label: 'Contribute', link: '#' },
-      { label: 'Media assets', link: '#' },
+      { label: 'Traveller', link: '/traveller' },
+      { label: 'Urbania', link: '/urbania' },
       { label: 'Changelog', link: '#' },
       { label: 'Releases', link: '#' },
     ],
@@ -30,7 +30,7 @@ const data = [
   {
     title: 'House Boat',
     links: [
-      { label: 'Join Discord', link: '#' },
+      { label: 'House Boat booking', link: '/houseboat' },
       { label: 'Follow on Twitter', link: '#' },
       { label: 'Email newsletter', link: '#' },
       { label: 'GitHub discussions', link: '#' },
@@ -54,7 +54,9 @@ export function FooterLinks() {
 
     return (
       <div className={classes.wrapper} key={group.title}>
-        <Text className={classes.title}>{group.title}</Text>
+        <Text className={classes.title}>
+          <strong> {group.title}</strong>
+        </Text>
         {links}
       </div>
     );
