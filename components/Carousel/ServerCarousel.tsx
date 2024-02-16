@@ -1,10 +1,11 @@
 'use client';
-import { Image, useMantineTheme } from '@mantine/core';
+import { Center, Image, Text, Title, useMantineTheme } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
 import { Carousel } from '@mantine/carousel';
 import classes from './TaxiCarousel.module.css';
+import { quicksand } from '@/app/font';
 
-export default function ServerCarousel({ data }: any) {
+export default function ServerCarousel({ data, title }: any) {
   const theme = useMantineTheme();
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
   const slides = data.map((item: string) => (
@@ -14,14 +15,19 @@ export default function ServerCarousel({ data }: any) {
   ));
 
   return (
-    <Carousel
-      slideSize={{ base: '100%', sm: '50%', md: '18%' }}
-      withIndicators
-      height={250}
-      loop
-      align="start"
-    >
-      {slides}
-    </Carousel>
+    <>
+      <Center>
+        <Text className={quicksand.className}>{title}</Text>
+      </Center>
+      <Carousel
+        slideSize={{ base: '100%', sm: '50%', md: '18%' }}
+        withIndicators
+        height={250}
+        loop
+        align="start"
+      >
+        {slides}
+      </Carousel>
+    </>
   );
 }

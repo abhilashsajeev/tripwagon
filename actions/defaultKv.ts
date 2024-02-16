@@ -1154,6 +1154,7 @@ export async function AddImagesForCarousel() {
   const data = [
     {
       id: 'traveller_ultra_luxury_08',
+      title: 'ULTRA LUXURY TEMPO TRAVELLER IMAGES',
       list: [
         'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/glwbzppvwrqlmlfs7hnm',
         'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/j3ncafbvumzzg0sau245',
@@ -1166,6 +1167,7 @@ export async function AddImagesForCarousel() {
     },
     {
       id: 'traveller_ultra_luxury_10',
+      title: '10 SEATER LUXURY TEMPO TRAVELLER IMAGES',
       list: [
         'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/traveller_2',
         'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/euf1asoo8ozsxg1prz42',
@@ -1177,6 +1179,7 @@ export async function AddImagesForCarousel() {
     },
     {
       id: 'traveller_premium_10',
+      title: '10 SEATER PREMIUM TEMPO TRAVELLER IMAGES',
       list: [
         'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/zmboxeuuxb9sx2lvhnb0',
         'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/tbtcv5ouq8atoxaimc29',
@@ -1187,6 +1190,7 @@ export async function AddImagesForCarousel() {
     },
     {
       id: 'traveller_premium_12',
+      title: '10-12 SEATER EXECUTIVE TEMPO TRAVELLER IMAGES',
       list: [
         'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/traveller_2',
         'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/euf1asoo8ozsxg1prz42',
@@ -1198,6 +1202,7 @@ export async function AddImagesForCarousel() {
     },
     {
       id: 'traveller_premium_17',
+      title: '17 SEATER PREMIUM TEMPO TRAVELLER IMAGES',
       list: [
         'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/traveller_2',
         'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/euf1asoo8ozsxg1prz42',
@@ -1220,6 +1225,7 @@ export async function AddImagesForCarousel() {
     },
     {
       id: 'traveller_premium_26',
+      title: '26 SEATER PREMIUM TEMPO TRAVELLER IMAGES',
       list: [
         'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/hyuiiiw4zccol9jatwhj',
         'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/euf1asoo8ozsxg1prz42',
@@ -1231,6 +1237,7 @@ export async function AddImagesForCarousel() {
     },
     {
       id: 'traveller_executive_12',
+      title: '12 SEATER EXECUTIVE TEMPO TRAVELLER IMAGES',
       list: [
         'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/traveller_2',
         'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/euf1asoo8ozsxg1prz42',
@@ -1242,6 +1249,7 @@ export async function AddImagesForCarousel() {
     },
     {
       id: 'traveller_executive_17',
+      title: '17 SEATER EXECUTIVE TEMPO TRAVELLER IMAGES',
       list: [
         'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/traveller_2',
         'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/euf1asoo8ozsxg1prz42',
@@ -1253,6 +1261,7 @@ export async function AddImagesForCarousel() {
     },
     {
       id: 'traveller_executive_20',
+      title: '20 SEATER EXECUTIVE TEMPO TRAVELLER IMAGES',
       list: [
         'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/rmup4b6wvkg3rh1iepwu',
         'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/euf1asoo8ozsxg1prz42',
@@ -1264,6 +1273,7 @@ export async function AddImagesForCarousel() {
     },
     {
       id: 'traveller_executive_26',
+      title: '26 SEATER EXECUTIVE TEMPO TRAVELLER IMAGES',
       list: [
         'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/traveller_2',
         'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/euf1asoo8ozsxg1prz42',
