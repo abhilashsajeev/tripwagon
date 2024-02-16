@@ -1,10 +1,14 @@
 'use client';
-
+import { smoochSans } from '@/app/font';
 import { Container, Grid, Stack, Text, Title } from '@mantine/core';
-import { oswald, smoochSans } from '../font';
 import Image from 'next/image';
 
-export default function Kochi() {
+interface PlaceBannerProps {
+  place: string;
+}
+
+export default function PlaceBanner({ place }: PlaceBannerProps) {
+  console.log('place banner', place);
   return (
     <Container my="md">
       <Title size="h2" className={smoochSans.className}>
@@ -30,7 +34,7 @@ export default function Kochi() {
         <Grid.Col span={{ base: 12, md: 8, sm: 9 }}>
           <Stack>
             <Title size="h3" className={smoochSans.className}>
-              COCHIN(KOCHI)
+              {place.toUpperCase()}
             </Title>
             <Text>
               The Major city in Kerala also known as the Queen of Arabian Sea, Cochin (Kochi) is
