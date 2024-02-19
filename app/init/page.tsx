@@ -1,22 +1,32 @@
+import getAllBusTypes from '@/actions/bus';
 import {
+  AddBusDefaults,
+  AddBusDetails,
   AddDefaultValuesForCars,
   AddDefaultValuesForCarsRate,
   AddDefaultValuesForTraveller,
   AddDefaultValuesForTravellerRate,
   AddImagesForCarousel,
+  AddUrbaniaDefaults,
+  AddUrbaniaDetails,
 } from '@/actions/defaultKv';
 import getAllTravelerInsideImages, { getRateTableForId } from '@/actions/traveller';
 import { Button, Container, Stack } from '@mantine/core';
 
 export default async function Defaultpage() {
+  await await AddBusDetails();
   await AddDefaultValuesForTravellerRate();
   await AddDefaultValuesForTraveller();
   await AddDefaultValuesForCars();
   await AddDefaultValuesForCarsRate();
   await AddImagesForCarousel();
+  await AddUrbaniaDetails();
+  await AddUrbaniaDefaults();
 
-  console.log('tragvasdflerer ', await getAllTravelerInsideImages());
-  console.log('traveller_premium_17', await getRateTableForId('traveller_premium_17'));
+  await AddBusDefaults();
+
+  console.log('bus_types  ', await getAllBusTypes());
+
   return (
     <Container my="md">
       <Stack>

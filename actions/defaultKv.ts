@@ -1071,6 +1071,90 @@ export async function AddDefaultValuesForTravellerRate() {
     },
   ];
 
+  await kv.set('traveller_ultra_luxury_08', ultraLuxury8seat);
+  await kv.set('traveller_ultra_luxury_10', ultraLuxury10seat);
+  await kv.set('traveller_premium_10', premium10seat);
+  await kv.set('traveller_premium_12', premium12seat);
+  await kv.set('traveller_premium_17', premium17seat);
+  await kv.set('traveller_premium_20', premium20seat);
+  await kv.set('traveller_premium_26', premium26seat);
+
+  await kv.set('traveller_executive_12', executive12Seat);
+  await kv.set('traveller_executive_20', executive20Seat);
+  await kv.set('traveller_executive_26', executive26Seat);
+}
+
+export async function AddUrbaniaDetails() {
+  const data = [
+    {
+      id: 'urbania_15_premium',
+      name: '15 SEATER PREMIUM URBANIA IN KERALA',
+      description: '15 SEATER PREMIUM URBANIA IN KERALA',
+      pax: 15,
+      extra_per_km: 30,
+      image:
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/zmboxeuuxb9sx2lvhnb0',
+    },
+    {
+      id: 'urbania_15_luxury',
+      name: 'Executive Tempo Traveller - 26 seater',
+      pax: 15,
+      description: '15 SEATER LUXURY URBANIA RATES IN KERALA',
+      extra_per_km: 30,
+      image:
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/zmboxeuuxb9sx2lvhnb0',
+    },
+  ];
+  await kv.set('urbania', data);
+}
+
+export async function AddBusDetails() {
+  const data = [
+    {
+      id: 'bus_26_benz',
+      name: '26 SEATER BENZ',
+      description: '26 SEATER BENZ',
+      pax: 26,
+      extra_per_km: 40,
+      image: '',
+    },
+    {
+      id: 'bus_34',
+      name: '34 SEATER MINI BUS ',
+      description: '34 SEATER MINI BUS ',
+      pax: 34,
+      extra_per_km: 40,
+      image: '',
+    },
+    {
+      id: 'bus_35_benz',
+      name: '35 SEATER BENZ ',
+      description: '35 SEATER BENZ ',
+      pax: 35,
+      extra_per_km: 45,
+      image: '',
+    },
+    {
+      id: 'bus_45_benz',
+      name: '45 SEATER LUXURY BENZ GLIDER',
+      description: '45 SEATER LUXURY BENZ GLIDER',
+      pax: 45,
+      extra_per_km: 60,
+      image: '',
+    },
+    {
+      id: 'bus_53_benz',
+      name: '53 SEATER LUXURY MULTI BENZ GLIDER',
+      description: '53 SEATER LUXURY MULTI BENZ GLIDER',
+      pax: 53,
+      extra_per_km: 70,
+      image: '',
+    },
+  ];
+  await kv.set('bus_types', data);
+}
+
+export async function AddUrbaniaDefaults() {
   const urbania15Seat = [
     {
       id: 1,
@@ -1136,18 +1220,410 @@ export async function AddDefaultValuesForTravellerRate() {
       bata: 10000,
     },
   ];
-  await kv.set('traveller_ultra_luxury_08', ultraLuxury8seat);
-  await kv.set('traveller_ultra_luxury_10', ultraLuxury10seat);
-  await kv.set('traveller_premium_10', premium10seat);
-  await kv.set('traveller_premium_12', premium12seat);
-  await kv.set('traveller_premium_17', premium17seat);
-  await kv.set('traveller_premium_20', premium20seat);
-  await kv.set('traveller_premium_26', premium26seat);
 
-  await kv.set('traveller_executive_12', executive12Seat);
-  await kv.set('traveller_executive_20', executive20Seat);
-  await kv.set('traveller_executive_26', executive26Seat);
-  await kv.set('urbania_15', urbania15Seat);
+  const urbania15Premium = [
+    {
+      id: 1,
+      number_of_days: '1 night - 2 days',
+      max_km: 160,
+      ac_rate: 12000,
+      bata: 2000,
+    },
+    {
+      id: 2,
+      number_of_days: '2 nights - 3 days',
+      max_km: 300,
+      ac_rate: 18000,
+      bata: 3000,
+    },
+    {
+      id: 3,
+      number_of_days: '3 nights - 4 days',
+      max_km: 400,
+      ac_rate: 24000,
+      bata: 4000,
+    },
+    {
+      id: 4,
+      number_of_days: '4 nights - 5 days',
+      max_km: 500,
+      ac_rate: 30000,
+      bata: 5000,
+    },
+    {
+      id: 5,
+      number_of_days: '5 nights - 6 days',
+      max_km: 600,
+      ac_rate: 36000,
+      bata: 6000,
+    },
+    {
+      id: 6,
+      number_of_days: '6 nights - 7 days',
+      max_km: 700,
+      ac_rate: 42000,
+      bata: 7000,
+    },
+    {
+      id: 7,
+      number_of_days: '7 nights - 8 days',
+      max_km: 800,
+      ac_rate: 48000,
+      bata: 8000,
+    },
+    {
+      id: 8,
+      number_of_days: '8 nights - 9 days',
+      max_km: 900,
+      ac_rate: 54000,
+      bata: 9000,
+    },
+    {
+      id: 9,
+      number_of_days: '9 nights - 10 days',
+      max_km: 1000,
+      ac_rate: 60000,
+      bata: 10000,
+    },
+  ];
+  await kv.set('urbania_15_luxury', urbania15Seat);
+  await kv.set('urbania_15_premium', urbania15Premium);
+}
+
+export async function AddBusDefaults() {
+  const bus26seat = [
+    {
+      id: 1,
+      number_of_days: '1 night - 2 days',
+      max_km: 160,
+      ac_rate: 14000,
+      bata: 2000,
+    },
+    {
+      id: 2,
+      number_of_days: '2 nights - 3 days',
+      max_km: 300,
+      ac_rate: 21000,
+      bata: 3000,
+    },
+    {
+      id: 3,
+      number_of_days: '3 nights - 4 days',
+      max_km: 400,
+      ac_rate: 28000,
+      bata: 4000,
+    },
+    {
+      id: 4,
+      number_of_days: '4 nights - 5 days',
+      max_km: 500,
+      ac_rate: 35000,
+      bata: 5000,
+    },
+    {
+      id: 5,
+      number_of_days: '5 nights - 6 days',
+      max_km: 600,
+      ac_rate: 42000,
+      bata: 6000,
+    },
+    {
+      id: 6,
+      number_of_days: '6 nights - 7 days',
+      max_km: 700,
+      ac_rate: 49000,
+      bata: 7000,
+    },
+    {
+      id: 7,
+      number_of_days: '7 nights - 8 days',
+      max_km: 800,
+      ac_rate: 56000,
+      bata: 8000,
+    },
+    {
+      id: 8,
+      number_of_days: '8 nights - 9 days',
+      max_km: 900,
+      ac_rate: 63000,
+      bata: 9000,
+    },
+    {
+      id: 9,
+      number_of_days: '9 nights - 10 days',
+      max_km: 1000,
+      ac_rate: 70000,
+      bata: 10000,
+    },
+  ];
+
+  const bus34Seat = [
+    {
+      id: 1,
+      number_of_days: '1 night - 2 days',
+      max_km: 160,
+      ac_rate: 17000,
+      bata: 2000,
+    },
+    {
+      id: 2,
+      number_of_days: '2 nights - 3 days',
+      max_km: 300,
+      ac_rate: 25500,
+      bata: 3000,
+    },
+    {
+      id: 3,
+      number_of_days: '3 nights - 4 days',
+      max_km: 400,
+      ac_rate: 34000,
+      bata: 4000,
+    },
+    {
+      id: 4,
+      number_of_days: '4 nights - 5 days',
+      max_km: 500,
+      ac_rate: 42500,
+      bata: 5000,
+    },
+    {
+      id: 5,
+      number_of_days: '5 nights - 6 days',
+      max_km: 600,
+      ac_rate: 51000,
+      bata: 6000,
+    },
+    {
+      id: 6,
+      number_of_days: '6 nights - 7 days',
+      max_km: 700,
+      ac_rate: 59500,
+      bata: 7000,
+    },
+    {
+      id: 7,
+      number_of_days: '7 nights - 8 days',
+      max_km: 800,
+      ac_rate: 68000,
+      bata: 8000,
+    },
+    {
+      id: 8,
+      number_of_days: '8 nights - 9 days',
+      max_km: 900,
+      ac_rate: 76500,
+      bata: 9000,
+    },
+    {
+      id: 9,
+      number_of_days: '9 nights - 10 days',
+      max_km: 1000,
+      ac_rate: 85000,
+      bata: 10000,
+    },
+  ];
+
+  const bus35Seat = [
+    {
+      id: 1,
+      number_of_days: '1 night - 2 days',
+      max_km: 160,
+      ac_rate: 19000,
+      bata: 2000,
+    },
+    {
+      id: 2,
+      number_of_days: '2 nights - 3 days',
+      max_km: 300,
+      ac_rate: 28500,
+      bata: 3000,
+    },
+    {
+      id: 3,
+      number_of_days: '3 nights - 4 days',
+      max_km: 400,
+      ac_rate: 38000,
+      bata: 4000,
+    },
+    {
+      id: 4,
+      number_of_days: '4 nights - 5 days',
+      max_km: 500,
+      ac_rate: 47500,
+      bata: 5000,
+    },
+    {
+      id: 5,
+      number_of_days: '5 nights - 6 days',
+      max_km: 600,
+      ac_rate: 57000,
+      bata: 6000,
+    },
+    {
+      id: 6,
+      number_of_days: '6 nights - 7 days',
+      max_km: 700,
+      ac_rate: 66500,
+      bata: 7000,
+    },
+    {
+      id: 7,
+      number_of_days: '7 nights - 8 days',
+      max_km: 800,
+      ac_rate: 76000,
+      bata: 8000,
+    },
+    {
+      id: 8,
+      number_of_days: '8 nights - 9 days',
+      max_km: 900,
+      ac_rate: 85500,
+      bata: 9000,
+    },
+    {
+      id: 9,
+      number_of_days: '9 nights - 10 days',
+      max_km: 1000,
+      ac_rate: 95000,
+      bata: 10000,
+    },
+  ];
+
+  const bus45Seat = [
+    {
+      id: 1,
+      number_of_days: '1 night - 2 days',
+      max_km: 160,
+      ac_rate: 25000,
+      bata: 2000,
+    },
+    {
+      id: 2,
+      number_of_days: '2 nights - 3 days',
+      max_km: 300,
+      ac_rate: 37500,
+      bata: 3000,
+    },
+    {
+      id: 3,
+      number_of_days: '3 nights - 4 days',
+      max_km: 400,
+      ac_rate: 38000,
+      bata: 4000,
+    },
+    {
+      id: 4,
+      number_of_days: '4 nights - 5 days',
+      max_km: 500,
+      ac_rate: 50000,
+      bata: 5000,
+    },
+    {
+      id: 5,
+      number_of_days: '5 nights - 6 days',
+      max_km: 600,
+      ac_rate: 62500,
+      bata: 6000,
+    },
+    {
+      id: 6,
+      number_of_days: '6 nights - 7 days',
+      max_km: 700,
+      ac_rate: 75000,
+      bata: 7000,
+    },
+    {
+      id: 7,
+      number_of_days: '7 nights - 8 days',
+      max_km: 800,
+      ac_rate: 87500,
+      bata: 8000,
+    },
+    {
+      id: 8,
+      number_of_days: '8 nights - 9 days',
+      max_km: 900,
+      ac_rate: 100000,
+      bata: 9000,
+    },
+    {
+      id: 9,
+      number_of_days: '9 nights - 10 days',
+      max_km: 1000,
+      ac_rate: 112500,
+      bata: 10000,
+    },
+  ];
+  const bus53Seat = [
+    {
+      id: 1,
+      number_of_days: '1 night - 2 days',
+      max_km: 160,
+      ac_rate: 29000,
+      bata: 2000,
+    },
+    {
+      id: 2,
+      number_of_days: '2 nights - 3 days',
+      max_km: 300,
+      ac_rate: 43500,
+      bata: 3000,
+    },
+    {
+      id: 3,
+      number_of_days: '3 nights - 4 days',
+      max_km: 400,
+      ac_rate: 58000,
+      bata: 4000,
+    },
+    {
+      id: 4,
+      number_of_days: '4 nights - 5 days',
+      max_km: 500,
+      ac_rate: 72500,
+      bata: 5000,
+    },
+    {
+      id: 5,
+      number_of_days: '5 nights - 6 days',
+      max_km: 600,
+      ac_rate: 87000,
+      bata: 6000,
+    },
+    {
+      id: 6,
+      number_of_days: '6 nights - 7 days',
+      max_km: 700,
+      ac_rate: 101500,
+      bata: 7000,
+    },
+    {
+      id: 7,
+      number_of_days: '7 nights - 8 days',
+      max_km: 800,
+      ac_rate: 116000,
+      bata: 8000,
+    },
+    {
+      id: 8,
+      number_of_days: '8 nights - 9 days',
+      max_km: 900,
+      ac_rate: 130500,
+      bata: 9000,
+    },
+    {
+      id: 9,
+      number_of_days: '9 nights - 10 days',
+      max_km: 1000,
+      ac_rate: 145000,
+      bata: 10000,
+    },
+  ];
+  await kv.set('bus_26_benz', bus26seat);
+  await kv.set('bus_34', bus34Seat);
+  await kv.set('bus_35_benz', bus35Seat);
+  await kv.set('bus_45_benz', bus45Seat);
+  await kv.set('bus_53_benz', bus53Seat);
 }
 
 export async function AddImagesForCarousel() {
@@ -1285,5 +1761,97 @@ export async function AddImagesForCarousel() {
     },
   ];
 
+  const urbania = [
+    {
+      id: 'urbania_15_premium',
+      title: '15 SEATER PREMIUM URBANIA IN KERALA',
+      list: [
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/nff58q9vbs5gd8n5l1nl',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/zp5vnssxozioffctpqoe',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/lui6keqwuzn7cabnrkim',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/dzx6d0qbubi7ewctmktm',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/bmucesyidjtbpq5okrcb',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/dzx6d0qbubi7ewctmktm',
+      ],
+    },
+    {
+      id: 'urbania_15_luxury',
+      title: '15 SEATER LUXURY URBANIA IN KERALA',
+      list: [
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/nff58q9vbs5gd8n5l1nl',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/zp5vnssxozioffctpqoe',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/lui6keqwuzn7cabnrkim',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/dzx6d0qbubi7ewctmktm',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/bmucesyidjtbpq5okrcb',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/dzx6d0qbubi7ewctmktm',
+      ],
+    },
+  ];
+
+  const busData = [
+    {
+      id: 'bus_26_benz',
+      title: '26 SEATER BENZ IN KERALA',
+      list: [
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/bus/hzfx8rh6ewhahzydbfeh',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/bus/wcx1qqhmsezz8nye6umt',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/bus/o7avkq0rcdfxwagazosv',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/bus/rnm9ypzmnkveeungss8t',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/bmucesyidjtbpq5okrcb',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/dzx6d0qbubi7ewctmktm',
+      ],
+    },
+    {
+      id: 'bus_34',
+      title: '34 SEATER MINI BUS IN KERALA',
+      list: [
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/bus/edt3zdblgsp8hwhhmdil',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/zp5vnssxozioffctpqoe',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/lui6keqwuzn7cabnrkim',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/dzx6d0qbubi7ewctmktm',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/bmucesyidjtbpq5okrcb',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/dzx6d0qbubi7ewctmktm',
+      ],
+    },
+    {
+      id: 'bus_35_benz',
+      title: '35 SEATER BENZ IN KERALA',
+      list: [
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/bus/mf9jl49uagiaknh78zmd',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/zp5vnssxozioffctpqoe',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/bus/dzjzktbtffq0a6mtg7o8',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/dzx6d0qbubi7ewctmktm',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/bmucesyidjtbpq5okrcb',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/dzx6d0qbubi7ewctmktm',
+      ],
+    },
+    {
+      id: 'bus_45_benz',
+      title: '45 SEATER LUXURY BENZ GLIDER IN KERALA',
+      list: [
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/bus/jypqrqwtmyn9ajlzqrsu',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/zp5vnssxozioffctpqoe',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/bus/bsv85p5obbkyqx6f90vh',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/dzx6d0qbubi7ewctmktm',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/bus/zwvrrfhytl0nbmjwdkja',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/bus/qiceyts4oiuyl2xgw2pe',
+      ],
+    },
+    {
+      id: 'bus_53_benz',
+      title: '53 SEATER LUXURY MULTI BENZ GLIDER IN KERALA',
+      list: [
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/bus/lknnhqkbbevdzpsuwdsk',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/zp5vnssxozioffctpqoe',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/lui6keqwuzn7cabnrkim',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/dzx6d0qbubi7ewctmktm',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/bmucesyidjtbpq5okrcb',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/dzx6d0qbubi7ewctmktm',
+      ],
+    },
+  ];
+
   await kv.set('traveller_images', data);
+  await kv.set('bus_images', busData);
+  await kv.set('urbania_images', urbania);
 }
