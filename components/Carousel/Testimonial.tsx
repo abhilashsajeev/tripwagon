@@ -4,6 +4,7 @@ import { useMediaQuery } from '@mantine/hooks';
 import { Carousel } from '@mantine/carousel';
 import classes from './TaxiCarousel.module.css';
 import { quicksand } from '@/app/font';
+import bg from './bg.svg';
 
 interface Review {
   text: string;
@@ -19,7 +20,11 @@ export default function TestimonialCarousel({ data, title }: TestimonialProps) {
   const theme = useMantineTheme();
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
   const slides = data?.map((item: Review) => (
-    <Carousel.Slide key={item.reviewer} className={classes.darkbg}>
+    <Carousel.Slide
+      key={item.reviewer}
+      className={classes.darkbg}
+      style={{ backgroundImage: `url(${bg.src})` }}
+    >
       <Container my="md">
         <Center>
           <Text>{item.text}</Text>
