@@ -1,4 +1,4 @@
-import Heading from '@/components/sabarimala/Heading';
+import Heading from '@/components/sabarimala/Sabarimala';
 
 export default function Pricing() {
   return (

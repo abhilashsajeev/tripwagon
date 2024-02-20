@@ -34,6 +34,21 @@ export default function Heading() {
       </Center>
       <KochiToSabariMalaTable />
       <Notes />
+      <Center>
+        <Title size="h4">Cochin to Guruvayoor to Sabarimala to Cochin Taxi Service</Title>
+      </Center>
+      <Center>
+        <List>
+          <List.Item>
+            Day 01: Pick up from Cochin Airport. Proceed to Guruvayoor Temple. After Dharsan proceed
+            to Pamba/Nilakkal (Sabarimala). Visit En-route temples.
+          </List.Item>
+          <List.Item>
+            Day 02: Pick up from Nilakkal, Sabarimala and transfer back to Cochin Airport.
+          </List.Item>
+          <Text>En-route Temple Visit: Erumeli Temple</Text>
+        </List>
+      </Center>
       <GvrToSabartimala />
       <Notes />
     </Container>
