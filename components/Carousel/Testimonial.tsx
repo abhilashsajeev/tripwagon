@@ -35,6 +35,8 @@ export default function TestimonialCarousel({ data, title }: TestimonialProps) {
         <Title className={quicksand.className} size="h3">
           {title}
         </Title>
+      </Center>
+      <Center>
         <span className={classes.borderOrange}></span>
       </Center>
       {data && (
