@@ -24,7 +24,7 @@ export default function TestimonialCarousel({ data, title }: TestimonialProps) {
         <Center>
           <Text>{item.text}</Text>
         </Center>
-        <Center>{item.reviewer}</Center>
+        <Center>-{item.reviewer}-</Center>
       </Container>
     </Carousel.Slide>
   ));
@@ -32,7 +32,10 @@ export default function TestimonialCarousel({ data, title }: TestimonialProps) {
   return (
     <>
       <Center>
-        <Text className={quicksand.className}>{title}</Text>
+        <Title className={quicksand.className} size="h3">
+          {title}
+        </Title>
+        <span className={classes.borderOrange}></span>
       </Center>
       {data && (
         <Carousel slideSize={{ base: '100%' }} withIndicators height={300} loop align="start">
