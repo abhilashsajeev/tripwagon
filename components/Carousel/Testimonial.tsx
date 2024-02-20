@@ -44,7 +44,19 @@ export default function TestimonialCarousel({ data, title }: TestimonialProps) {
         <span className={classes.borderOrange}></span>
       </Center>
       {data && (
-        <Carousel slideSize={{ base: '100%' }} withIndicators height={300} loop align="start">
+        <Carousel
+          slideSize={{ base: '100%' }}
+          withIndicators
+          height={300}
+          loop
+          align="start"
+          previousControlProps={{
+            'aria-label': 'Previous',
+          }}
+          nextControlProps={{
+            'aria-label': 'Next',
+          }}
+        >
           {slides}
         </Carousel>
       )}

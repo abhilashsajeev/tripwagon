@@ -23,6 +23,12 @@ export function CarouselFromProp({ data }: any) {
       slideSize={{ base: '100%', sm: '50%', xs: '40%', md: '33.333333%' }}
       slideGap={{ base: rem(2), sm: 'xl' }}
       height={250}
+      previousControlProps={{
+        'aria-label': 'Previous',
+      }}
+      nextControlProps={{
+        'aria-label': 'Next',
+      }}
       align="start"
       slidesToScroll={mobile ? 1 : 2}
     >

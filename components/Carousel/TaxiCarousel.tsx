@@ -63,6 +63,12 @@ export default function TaxiCarousel() {
       withIndicators
       height={250}
       loop
+      previousControlProps={{
+        'aria-label': 'Previous',
+      }}
+      nextControlProps={{
+        'aria-label': 'Next',
+      }}
       align="start"
     >
       {slides}
