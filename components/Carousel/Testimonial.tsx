@@ -22,8 +22,7 @@ export default function TestimonialCarousel({ data, title }: TestimonialProps) {
   const slides = data?.map((item: Review) => (
     <Carousel.Slide
       key={item.reviewer}
-      className={classes.darkbg}
-      style={{ backgroundImage: `url(${bg.src})` }}
+      style={{ backgroundImage: `url(${bg.src})`, color: 'antiquewhite' }}
     >
       <Container my="md">
         <Center>
