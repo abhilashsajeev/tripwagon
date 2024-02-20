@@ -27,7 +27,7 @@ function ContactIcon({ icon: Icon, title, description, ...others }: ContactIconP
 
 const MOCKDATA = [
   { title: 'Email', description: 'tripwagoncabs@gmail.com', icon: IconAt },
-  { title: 'Phone', description: '+91 7907180xxx', icon: IconPhone },
+  { title: 'Phone', description: '+91 7593921784', icon: IconPhone },
   { title: 'Address', description: 'Somewhere near Kodungallur', icon: IconMapPin },
   { title: 'Working hours', description: '8 a.m. – 11 p.m.', icon: IconSun },
 ];

@@ -90,6 +90,7 @@ export function FooterLinks() {
             color="gray"
             variant="subtle"
             component={Link}
+            aria-label="Twitter"
             href="https://www.youtube.com/channel/UCq8LnG9DHyyHnCJtLFAQUcg"
             target="_blank"
           >
@@ -99,6 +100,7 @@ export function FooterLinks() {
             size="lg"
             color="gray"
             variant="subtle"
+            aria-label="Youtube"
             component={Link}
             href="https://www.youtube.com/channel/UCq8LnG9DHyyHnCJtLFAQUcg"
             target="_blank"
@@ -109,6 +111,7 @@ export function FooterLinks() {
             size="lg"
             color="gray"
             variant="subtle"
+            aria-label="Instagram"
             component={Link}
             href="https://www.youtube.com/channel/UCq8LnG9DHyyHnCJtLFAQUcg"
             target="_blank"
@@ -120,6 +123,7 @@ export function FooterLinks() {
             size="lg"
             color="gray"
             variant="subtle"
+            aria-label="Trip Advisor"
             component={Link}
             href="https://www.tripadvisor.in/Profile/tripwagon"
             target="_blank"
