@@ -88,22 +88,22 @@ const data = [
   {
     vehicle: 'Benz Mini Coach AC',
     pax: 26,
-    id: '/bus#benz_mini',
+    id: '/bus#bus_26_benz',
   },
   {
     vehicle: 'Executive Mini Coach AC',
     pax: 35,
-    id: '/bus#benz_mini_executive',
+    id: '/bus#bus_34',
   },
   {
     vehicle: 'Luxury Benz Glider AC',
     pax: 45,
-    id: '/bus#benz_glider',
+    id: '/bus#bus_45_benz',
   },
   {
     vehicle: 'Luxury Benz Multi Glider AC',
     pax: 53,
-    id: '/bus#benz_multi_glider',
+    id: '/bus#bus_53_benz',
   },
 ];
 
