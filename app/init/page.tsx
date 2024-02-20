@@ -9,6 +9,7 @@ import {
   AddImagesForCarousel,
   AddUrbaniaDefaults,
   AddUrbaniaDetails,
+  DefaultReviews,
 } from '@/actions/defaultKv';
 import getAllTravelerInsideImages, { getRateTableForId } from '@/actions/traveller';
 import { Button, Container, Stack } from '@mantine/core';
@@ -22,6 +23,7 @@ export default async function Defaultpage() {
   await AddImagesForCarousel();
   await AddUrbaniaDetails();
   await AddUrbaniaDefaults();
+  await DefaultReviews();
 
   await AddBusDefaults();
 

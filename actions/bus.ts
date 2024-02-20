@@ -31,3 +31,8 @@ export const getBusCarouselImages = async (id?: string) => {
   const result: any = await kv.get('bus_images');
   return id ? result?.filter((i: any) => i.id === id) : result;
 };
+
+export const getReviews = async () => {
+  const result: any = await kv.get('reviews');
+  return result;
+};

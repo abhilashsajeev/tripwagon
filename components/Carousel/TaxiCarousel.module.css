@@ -5,3 +5,8 @@
 .imageContainer img:hover {
   transform: scale(1.2);
 }
+
+.darkbg {
+  background-color: chocolate;
+  color: antiquewhite;
+}
