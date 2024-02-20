@@ -1,5 +1,5 @@
 'use client';
-import { Center, Image, Text, Title, useMantineTheme } from '@mantine/core';
+import { Center, Container, Image, Text, Title, useMantineTheme } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
 import { Carousel } from '@mantine/carousel';
 import classes from './TaxiCarousel.module.css';
@@ -20,10 +20,12 @@ export default function TestimonialCarousel({ data, title }: TestimonialProps) {
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
   const slides = data?.map((item: Review) => (
     <Carousel.Slide key={item.reviewer} className={classes.darkbg}>
-      <Center>
-        <Text>{item.text}</Text>
-      </Center>
-      <Center>{item.reviewer}</Center>
+      <Container my="md">
+        <Center>
+          <Text>{item.text}</Text>
+        </Center>
+        <Center>{item.reviewer}</Center>
+      </Container>
     </Carousel.Slide>
   ));
 
@@ -33,7 +35,7 @@ export default function TestimonialCarousel({ data, title }: TestimonialProps) {
         <Text className={quicksand.className}>{title}</Text>
       </Center>
       {data && (
-        <Carousel slideSize={{ base: '100%' }} withIndicators height={400} loop align="start">
+        <Carousel slideSize={{ base: '100%' }} withIndicators height={300} loop align="start">
           {slides}
         </Carousel>
       )}
