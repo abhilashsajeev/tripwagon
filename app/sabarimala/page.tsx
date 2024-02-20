@@ -1,9 +1,9 @@
-import { CardsCarousel } from '@/components/Carousel/Carousel';
+import Heading from '@/components/sabarimala/Heading';
 
 export default function Pricing() {
   return (
     <>
-      <CardsCarousel />
+      <Heading />
     </>
   );
 }
