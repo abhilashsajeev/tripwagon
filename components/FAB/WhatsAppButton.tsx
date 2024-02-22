@@ -11,7 +11,7 @@ export default function WhatsAppFAB() {
         radius="xl"
         size={60}
         component={Link}
-        href="https://wa.me/+917539921784"
+        href="https://wa.me/+919539295705"
         target="_blank"
       >
         <RiWhatsappFill size={30} />
