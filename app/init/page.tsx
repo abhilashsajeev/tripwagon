@@ -11,23 +11,27 @@ import {
   AddUrbaniaDetails,
   DefaultReviews,
 } from '@/actions/defaultKv';
-import getAllTravelerInsideImages, { getRateTableForId } from '@/actions/traveller';
+import getAllTravelerInsideImages, {
+  getRateTableForId,
+  getTravelerCarouselImages,
+} from '@/actions/traveller';
 import { Button, Container, Stack } from '@mantine/core';
 
 export default async function Defaultpage() {
-  await await AddBusDetails();
+  await AddImagesForCarousel();
+  await AddBusDetails();
   await AddDefaultValuesForTravellerRate();
   await AddDefaultValuesForTraveller();
   await AddDefaultValuesForCars();
   await AddDefaultValuesForCarsRate();
-  await AddImagesForCarousel();
+
   await AddUrbaniaDetails();
   await AddUrbaniaDefaults();
   await DefaultReviews();
 
   await AddBusDefaults();
 
-  console.log('bus_types  ', await getAllBusTypes());
+  console.log('tempo carousel  ', await getTravelerCarouselImages());
 
   return (
     <Container my="md">

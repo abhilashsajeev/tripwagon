@@ -2213,22 +2213,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mantine/carousel@npm:^7.5.2":
-  version: 7.5.2
-  resolution: "@mantine/carousel@npm:7.5.2"
+"@mantine/carousel@npm:^7.5.3":
+  version: 7.5.3
+  resolution: "@mantine/carousel@npm:7.5.3"
   peerDependencies:
-    "@mantine/core": 7.5.2
-    "@mantine/hooks": 7.5.2
+    "@mantine/core": 7.5.3
+    "@mantine/hooks": 7.5.3
     embla-carousel-react: ">=7.0.0"
     react: ^18.2.0
     react-dom: ^18.2.0
-  checksum: 011b9f466b0c19a8b18f3fe8c2ee91ee5e68779f3472f0658bd2748552aff02e47bddd4c2d5ef7f1c0f553561fe15f071e1aed2699a32e5480b7499fd062d7cb
+  checksum: 34322675ddaffba13632c3f1eb44e511f027f549491ab6f899913c4630d44fc94e1f5806ee5bce6b2c982dd2ce243b7125704da694ff474ccd97d1613aaa5f6d
   languageName: node
   linkType: hard
 
-"@mantine/core@npm:7.5.1":
-  version: 7.5.1
-  resolution: "@mantine/core@npm:7.5.1"
+"@mantine/core@npm:7.5.3":
+  version: 7.5.3
+  resolution: "@mantine/core@npm:7.5.3"
   dependencies:
     "@floating-ui/react": "npm:^0.24.8"
     clsx: "npm:2.0.0"
@@ -2237,19 +2237,19 @@ __metadata:
     react-textarea-autosize: "npm:8.5.3"
     type-fest: "npm:^3.13.1"
   peerDependencies:
-    "@mantine/hooks": 7.5.1
+    "@mantine/hooks": 7.5.3
     react: ^18.2.0
     react-dom: ^18.2.0
-  checksum: 37afdb551f19a96fb0b07dbd142db260daccffcb225bfd2ca0d9072e1097c3d44a18a6de2c3f32ce55aa4d526a5dc127dc573ef2be3f00f26b461154d4f02e0d
+  checksum: e0dc08ada84c955cbb8d37ee876ac872035af72f6c1e7c497274fb54c4f85fecb253a91d592eb889d077687b5a5e2bf9959ffb1c4c9143eaeb94e444ced3b431
   languageName: node
   linkType: hard
 
-"@mantine/hooks@npm:7.5.1":
-  version: 7.5.1
-  resolution: "@mantine/hooks@npm:7.5.1"
+"@mantine/hooks@npm:7.5.3":
+  version: 7.5.3
+  resolution: "@mantine/hooks@npm:7.5.3"
   peerDependencies:
     react: ^18.2.0
-  checksum: 2f085a16b7d5f2db3351c44836c75daaeb48a4af486b44fc642dd7f94e2f91877ab683677141f835d16def1bb67c6dc90b021e056caa43b6f78fe63b3c2fb690
+  checksum: 7476f0f482e1dbddaf89965f181117556d9284c1727b52967f9ad67135c674a146b62e600ae4946abbc906c196dde8fa1de9c314f5975496f5edbe6fc62a539d
   languageName: node
   linkType: hard
 
@@ -2463,6 +2463,64 @@ __metadata:
   version: 1.0.0-next.24
   resolution: "@polka/url@npm:1.0.0-next.24"
   checksum: 97d98fa911857158514457bedad8c36084c1f608302458f580ab300a25c3abf456d1d54fcf2ea7927464bee0858baf5e8e5b374b95c3375b9eb3784d81411ebd
+  languageName: node
+  linkType: hard
+
+"@prisma/client@npm:^5.10.2":
+  version: 5.10.2
+  resolution: "@prisma/client@npm:5.10.2"
+  peerDependencies:
+    prisma: "*"
+  peerDependenciesMeta:
+    prisma:
+      optional: true
+  checksum: d2bd28d72601c24a180910a8b0264a9b01c2c9120b5255e51ae95559e21630c77120d9258f2ea5fac1c353c8f0b2390276481fcedc6594b6b79cc31c0b02c7c9
+  languageName: node
+  linkType: hard
+
+"@prisma/debug@npm:5.10.2":
+  version: 5.10.2
+  resolution: "@prisma/debug@npm:5.10.2"
+  checksum: 9a76f4197d0072f1588c4bf1501aaf6df0729edc929485551d3f90df0b1f5d5933fcc88b9dae8dfeda028c705debe4c436c4bca007687d32bbbf95c5771c7f1f
+  languageName: node
+  linkType: hard
+
+"@prisma/engines-version@npm:5.10.0-34.5a9203d0590c951969e85a7d07215503f4672eb9":
+  version: 5.10.0-34.5a9203d0590c951969e85a7d07215503f4672eb9
+  resolution: "@prisma/engines-version@npm:5.10.0-34.5a9203d0590c951969e85a7d07215503f4672eb9"
+  checksum: b712c8222915d9cb4bf8284d2687ff080d4f8cac61faf0da1d2967f66d086f9202d916f65a6657af11983c5f33890a90657a3360146cbaad6a92876aea889054
+  languageName: node
+  linkType: hard
+
+"@prisma/engines@npm:5.10.2":
+  version: 5.10.2
+  resolution: "@prisma/engines@npm:5.10.2"
+  dependencies:
+    "@prisma/debug": "npm:5.10.2"
+    "@prisma/engines-version": "npm:5.10.0-34.5a9203d0590c951969e85a7d07215503f4672eb9"
+    "@prisma/fetch-engine": "npm:5.10.2"
+    "@prisma/get-platform": "npm:5.10.2"
+  checksum: bea6988d78c8e7733af18ec0f2d8f60375a311424f2b45911c9077c4f9d1b04e539802ad62239b8355579214aaccb094af34b5ac86e4a7642d7ac0ed9d7a85b7
+  languageName: node
+  linkType: hard
+
+"@prisma/fetch-engine@npm:5.10.2":
+  version: 5.10.2
+  resolution: "@prisma/fetch-engine@npm:5.10.2"
+  dependencies:
+    "@prisma/debug": "npm:5.10.2"
+    "@prisma/engines-version": "npm:5.10.0-34.5a9203d0590c951969e85a7d07215503f4672eb9"
+    "@prisma/get-platform": "npm:5.10.2"
+  checksum: 38f8506ca98280cc011b872ee8d650e857fca07ffeab7214d58c104ee70285739e2dd2b93e78a20d1e57067fc85565bf8ebc23acc350021dcd9ccc4eecb0a831
+  languageName: node
+  linkType: hard
+
+"@prisma/get-platform@npm:5.10.2":
+  version: 5.10.2
+  resolution: "@prisma/get-platform@npm:5.10.2"
+  dependencies:
+    "@prisma/debug": "npm:5.10.2"
+  checksum: c3f12262f3dbfe47010ac08a04d29bdc97ca7d112d6abb125c0c90e0001bf7816274715f0605edc261327ec705734bf5ba54101cb7f2b0bb6aa93964f05791e3
   languageName: node
   linkType: hard
 
@@ -11155,11 +11213,12 @@ __metadata:
   resolution: "mantine-next-template@workspace:."
   dependencies:
     "@babel/core": "npm:^7.23.2"
-    "@mantine/carousel": "npm:^7.5.2"
-    "@mantine/core": "npm:7.5.1"
-    "@mantine/hooks": "npm:7.5.1"
+    "@mantine/carousel": "npm:^7.5.3"
+    "@mantine/core": "npm:7.5.3"
+    "@mantine/hooks": "npm:7.5.3"
     "@next/bundle-analyzer": "npm:^14.0.1"
     "@next/eslint-plugin-next": "npm:^14.0.1"
+    "@prisma/client": "npm:^5.10.2"
     "@storybook/addon-essentials": "npm:^7.5.2"
     "@storybook/addon-styling-webpack": "npm:^0.0.5"
     "@storybook/blocks": "npm:^7.5.2"
@@ -11197,6 +11256,7 @@ __metadata:
     postcss-preset-mantine: "npm:1.13.0"
     postcss-simple-vars: "npm:^7.0.1"
     prettier: "npm:^3.0.3"
+    prisma: "npm:^5.10.2"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
     react-icons: "npm:^5.0.1"
@@ -12798,6 +12858,17 @@ __metadata:
   version: 1.0.3
   resolution: "pretty-hrtime@npm:1.0.3"
   checksum: 67cb3fc283a72252b49ac488647e6a01b78b7aa1b8f2061834aa1650691229081518ef3ca940f77f41cc8a8f02ba9eeb74b843481596670209e493062f2e89e0
+  languageName: node
+  linkType: hard
+
+"prisma@npm:^5.10.2":
+  version: 5.10.2
+  resolution: "prisma@npm:5.10.2"
+  dependencies:
+    "@prisma/engines": "npm:5.10.2"
+  bin:
+    prisma: build/index.js
+  checksum: f57f9e2032766d02d9f8c5ffbd8a9b52459fe69c2a19abe472ef97057256d2fc23d25efebddcd76bb07c35c0c5ba94c91b74bcde7e061b4a01aa21794076195a
   languageName: node
   linkType: hard
 
