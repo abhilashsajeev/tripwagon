@@ -22,3 +22,14 @@ model TouristPlace {
 
   @@index([id, place])
 }
+
+
+model CarouselImages {
+  id        String   @id @default(cuid())
+  title     String
+  vehicle_type String
+  list     String[]
+
+  @@index([id, title])
+}
+

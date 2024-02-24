@@ -1,17 +1,19 @@
+import { PlaceDataType, getPlaceWithId } from '@/actions/places';
 import PlaceBanner from '@/components/PlaceDescription/PlaceBanner';
 
-export default function Page({ params }: any) {
+export default async function Page({ params }: any) {
   const { id } = params;
+  const result: PlaceDataType | null = await getPlaceWithId(id);
 
   return (
     <>
-      <PlaceBanner place={id} />
+      <PlaceBanner result={result} />
     </>
   );
 }
 
 export async function generateStaticParams() {
-  const posts = ['kochi', 'trivandrum', 'munnar'];
+  const posts = ['kochi', 'kovalam', 'munnar', 'vagamon', 'thekkady', 'kanyakumari', 'kollam'];
 
   return posts.map((post) => ({
     id: post,

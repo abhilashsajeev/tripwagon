@@ -1,3 +1,4 @@
+import { getAllPlaces } from '@/actions/places';
 import TaxiCarousel from '@/components/Carousel/TaxiCarousel';
 import FaqWithBg from '@/components/FaqWithImage/FaqWithBg';
 import KeralaTaxiHead from '@/components/Headings/KeralaTaxiHeader';
@@ -6,7 +7,8 @@ import PlacesGrid from '@/components/Places/PlacesGrid';
 import ItenaryTable from '@/components/Tables/TariffTables/ItinaryTable';
 import { TariffTable } from '@/components/Tables/TariffTables/TarrifTableAll';
 
-export default function Pricing() {
+export default async function Pricing() {
+  const result = await getAllPlaces();
   return (
     <>
       <KeralaTaxiHead />
@@ -15,7 +17,7 @@ export default function Pricing() {
       <TariffTable />
       <ItenaryTable />
       <FaqWithBg />
-      <PlacesGrid />
+      <PlacesGrid data={result} />
     </>
   );
 }

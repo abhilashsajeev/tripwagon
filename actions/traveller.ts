@@ -1,3 +1,4 @@
+import { db } from '@/lib/db';
 import { kv } from '@vercel/kv';
 
 export interface Traveller {
@@ -28,6 +29,13 @@ export const getRateTableForId = async (id: string) => {
 };
 
 export async function getTravelerCarouselImages(id?: string) {
-  const result: any = await kv.get('traveller_images');
-  return id ? result?.filter((i: any) => i.id === id) : result;
+  'use server';
+  const result: any = await db.carouselImages.findMany({
+    where: {
+      AND: {
+        vehicle_type: 'traveller',
+      },
+    },
+  });
+  return id ? result.filter((i: any) => i.id === id) : result;
 }

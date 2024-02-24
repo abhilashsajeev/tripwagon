@@ -2,6 +2,7 @@
 import { Button, Center, Grid, Paper, Text, Title } from '@mantine/core';
 import classes from './PlacesGrid.module.css';
 import Link from 'next/link';
+import { PlaceDataType } from '@/actions/places';
 
 interface CardProps {
   image: string;
@@ -9,65 +10,6 @@ interface CardProps {
   category: string;
   link: string;
 }
-
-const data = [
-  {
-    id: 'kochi',
-    place: 'Kochi',
-    image:
-      'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/ae4mtinb0cacwj3f8uya',
-    category: 'Beach',
-  },
-  {
-    id: 'munnar',
-    place: 'Munnar',
-    image:
-      'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/obwycfunza05h5pfljpf',
-    category: 'HillStation',
-  },
-  {
-    id: 'alappuzha',
-    place: 'Alappuzha',
-    image:
-      'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/pix2jbufjgqetgdwqchj',
-    category: 'Backwaters',
-  },
-  {
-    id: 'trivandrum',
-    place: 'Trivandrum',
-    image:
-      'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/qtusszcmgwzzlgc2u82d',
-    category: 'Cultural',
-  },
-  {
-    id: 'kovalam',
-    place: 'Kovalam',
-    image:
-      'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/a3bap2ylviuxeol9mgs8',
-    category: 'Beach',
-  },
-  {
-    id: 'vagamon',
-    place: 'Vagamon',
-    image:
-      'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/nuoolmdwoip1kexfh5kg',
-    category: 'Hill Station',
-  },
-  {
-    id: 'kanyakumari',
-    place: 'Kanyakumari',
-    image:
-      'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/fnwf5jrgpkygxpnzlwss',
-    category: 'Beach / Sunrise',
-  },
-  {
-    id: 'kollam',
-    place: 'Thenmala',
-    image:
-      'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/k2qmsteciyxvwawb6qbs',
-    category: 'Cultural',
-  },
-];
 
 function Card({ image, title, category, link }: CardProps) {
   return (
@@ -93,7 +35,11 @@ function Card({ image, title, category, link }: CardProps) {
   );
 }
 
-export default function PlacesGrid() {
+interface PlacesGridProps {
+  data: PlaceDataType[];
+}
+
+export default function PlacesGrid({ data }: PlacesGridProps) {
   return (
     <Grid>
       <Grid.Col span={12}>
