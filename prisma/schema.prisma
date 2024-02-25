@@ -33,3 +33,14 @@ model CarouselImages {
   @@index([id, title])
 }
 
+
+model SightSeeingSpots {
+  id          Int      @id @default(autoincrement())
+  place_id    String   
+  sight_name  String
+  sight_image String
+  location    String
+  carousel_images String[]
+
+  @@index([place_id, sight_name])
+}

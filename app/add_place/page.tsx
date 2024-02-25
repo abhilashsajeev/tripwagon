@@ -1,9 +1,9 @@
-import { addCarouselImages } from '@/actions/places';
+import { addSightSeeing } from '@/actions/places';
 
 export default function AddPlaceForm() {
   return (
     <>
-      <form action={addCarouselImages}>
+      <form action={addSightSeeing}>
         <label>Id</label>
         <input name="id" type="text" />
         <label>Place</label>

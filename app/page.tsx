@@ -7,6 +7,42 @@ import LoadingSkleton from '@/components/LoadingSkleton/LoadingSkleton';
 import { StatsGroup } from '@/components/StatusGroup/StatusGroup';
 import { getReviews } from '@/actions/bus';
 import TestimonialCarousel from '@/components/Carousel/Testimonial';
+import { TaxiPackagesCarousel } from '@/components/Carousel/TaxiPackagesCarousel';
+
+const taxiData = [
+  {
+    id: 1,
+    name: 'KOCHI AIRPORT TAXI',
+    image: 'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/group_1',
+    link: '/taxi',
+  },
+  {
+    id: 2,
+    name: 'SABARIMALA TAXI PACKAGES',
+    image: 'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/crysta_4',
+    link: '/sabarimala',
+  },
+  {
+    id: 3,
+    name: 'KERALA TAXI PACAKGES',
+    image: 'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/1',
+    link: '/package',
+  },
+  {
+    id: 3,
+    name: 'KERALA TEMPO TRAVELLER',
+    image:
+      'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/prlrpohyx89eiun8h11d',
+    link: '/traveller',
+  },
+  {
+    id: 4,
+    name: 'KERALA URBANIA RENTALS',
+    link: '/urbania',
+    image:
+      'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/zp5vnssxozioffctpqoe',
+  },
+];
 
 export default async function HomePage() {
   const reviews = await getReviews();
@@ -17,11 +53,11 @@ export default async function HomePage() {
       <WhatsAppFAB />
 
       <FeaturesGrid />
+      <TaxiPackagesCarousel data={taxiData} />
       <TestimonialCarousel data={reviews} title="Testimonials" />
       <Suspense fallback={<LoadingSkleton />}>
         <GetInTouch />
       </Suspense>
-      <StatsGroup />
     </>
   );
 }

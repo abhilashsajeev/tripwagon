@@ -16,8 +16,8 @@ export default async function Pricing() {
       <LeadingTaxiHead />
       <TariffTable />
       <ItenaryTable />
-      <FaqWithBg />
       <PlacesGrid data={result} />
+      <FaqWithBg />
     </>
   );
 }

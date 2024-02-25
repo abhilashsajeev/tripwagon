@@ -97,6 +97,68 @@ export const addDefaultValues = async (formData: FormData) => {
   }
 };
 
+export const getSightsBasedonId = async (id: string) => {
+  const result = await db.sightSeeingSpots.findMany({
+    where: {
+      place_id: id,
+    },
+  });
+  return result;
+};
+
+export const addSightSeeing = async (formData: FormData) => {
+  'use server';
+  const data = [
+    {
+      id: 27,
+      place_id: 'kanyakumari',
+      sight_name: 'KANYAKUMARI BEACH',
+      sight_image:
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/sightseeing/fnahrgqh8ejokmzlbiyh',
+      carousel_images: [],
+      location: '',
+    },
+    {
+      id: 29,
+      place_id: 'kanyakumari',
+      sight_name: 'VIVEKANADA ROCK',
+      sight_image:
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/sightseeing/xkcxdvqfqndeby9rajri',
+      carousel_images: [],
+      location: '',
+    },
+    {
+      id: 30,
+      place_id: 'kanyakumari',
+      sight_name: 'THIRUVALLUAVAR STATUTE',
+      sight_image:
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/sightseeing/xsb1qcq44k6s26mpdm0k',
+      carousel_images: [],
+      location: '',
+    },
+    {
+      id: 31,
+      place_id: 'kanyakumari',
+      sight_name: 'THANUMALAYAN TEMPLE',
+      sight_image:
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/sightseeing/atfz3zhopgs4kp5ew2ec',
+      carousel_images: [],
+      location: '',
+    },
+    {
+      id: 32,
+      place_id: 'kanyakumari',
+      sight_name: 'PADMANABHAPURAM PALACE',
+      sight_image:
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/sightseeing/n8qu0ynppcx2axnegdkc',
+      carousel_images: [],
+      location: '',
+    },
+  ];
+  const result = await db.sightSeeingSpots.createMany({ data: data });
+  return result;
+};
+
 export const addCarouselImages = async (formData: FormData) => {
   'use server';
   const data = [
