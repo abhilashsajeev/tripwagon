@@ -20,7 +20,7 @@ export default function ServerCarousel({ data, title }: any) {
         <Text className={quicksand.className}>{title}</Text>
       </Center>
       <Carousel
-        slideSize={{ base: '100%', sm: '50%', md: '18%' }}
+        slideSize={{ base: '100%', sm: '50%', md: '25%' }}
         withIndicators
         height={250}
         loop
