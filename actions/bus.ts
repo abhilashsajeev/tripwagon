@@ -37,7 +37,7 @@ export const getBusCarouselImages = async (id?: string) => {
       },
     },
   });
-  console.log('type aget bus carousel', result);
+
   return id ? result.filter((i: any) => i.id === id) : result;
 };
 
