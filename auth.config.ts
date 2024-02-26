@@ -12,6 +12,7 @@ export default {
       name: 'Credentials',
       // @ts-ignore
       async authorize(credentials) {
+        'use server';
         const validatedFields = LoginSchema.safeParse(credentials);
 
         if (validatedFields.success) {

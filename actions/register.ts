@@ -8,6 +8,7 @@ import { RegisterSchema } from '@/schemas';
 import { getUserByEmail } from '@/data/user';
 
 export const register = async (values: z.infer<typeof RegisterSchema>) => {
+  'use server';
   const validatedFields = RegisterSchema.safeParse(values);
 
   if (!validatedFields.success) {
