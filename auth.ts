@@ -28,7 +28,7 @@ export const {
       }
 
       if (session.user) {
-        session.user.name = token.name;
+        // @ts-ignore
         session.user.email = token.email;
       }
 
@@ -41,7 +41,6 @@ export const {
 
       if (!existingUser) return token;
 
-      token.name = existingUser.name;
       token.email = existingUser.email;
 
       return token;
