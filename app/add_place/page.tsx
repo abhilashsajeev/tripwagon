@@ -1,9 +1,9 @@
-import { addSightSeeing } from '@/actions/places';
+import { addDefaultValues } from '@/actions/places';
 
 export default function AddPlaceForm() {
   return (
     <>
-      <form action={addSightSeeing}>
+      <form action={addDefaultValues}>
         <label>Id</label>
         <input name="id" type="text" />
         <label>Place</label>

@@ -19,7 +19,12 @@ export interface BusRate {
 }
 
 export default async function getAllBusTypes(id?: string) {
-  const result: any = await kv.get('bus_types');
+  'use server';
+  const result: any = await db.vehiclesMaster.findMany({
+    where: {
+      vehicle_type: 'bus',
+    },
+  });
   return id ? result?.filter((i: any) => i.id === id) : result;
 }
 

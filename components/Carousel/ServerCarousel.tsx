@@ -8,7 +8,7 @@ import { quicksand } from '@/app/font';
 export default function ServerCarousel({ data, title }: any) {
   const theme = useMantineTheme();
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
-  const slides = data.map((item: string) => (
+  const slides = data?.map((item: string) => (
     <Carousel.Slide key={item} className={classes.imageContainer}>
       <Image height={250} src={item} alt={'Image of traveller'} />
     </Carousel.Slide>

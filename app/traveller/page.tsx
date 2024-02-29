@@ -11,6 +11,7 @@ import TempoTravellerHeading from '@/components/TempTravellerHeading/TempoTravel
 export default async function Pricing() {
   const results = await getAllTravelerInsideImages();
   const imagesList = await getTravelerCarouselImages();
+  console.log('images list', imagesList);
   const components = results?.map((item: Traveller) => (
     <div key={item.id} id={item.id}>
       <ServerCarousel

@@ -26,67 +26,13 @@ export const addDefaultValues = async (formData: FormData) => {
   try {
     const data = [
       {
-        id: 'munnar',
-        place: 'Munnar',
+        id: 'kochi',
+        place: 'Kochi',
         description:
-          'The most beautiful hill station in India. God has gifted the place with the romantic climate and the sober greenery of tea plantations over the hills. Luckily travellers can have the sights of wild Elephants. Eravikulam national park situated in the Anamudi Mountain the highest peak in south India having the rare species of Nilgiri Tahr (Mountain Goat). Munnar has become one of the best tourist destination of kerala and having lots of sightseeing locations like tea estates, spice plantations and activities like elephant Rides, Jeep safari, Theme Parks which will give the travellers a memorable experience.',
+          'The Major city in Kerala also known as the Queen of Arabian Sea, Cochin (Kochi) is well known over the world from the ancient times as spice trade centre of India and was explored by many countries. The foot prints of those countries still exists in cochin and the visitors can experience it at the Fort Cochin, Dutch palace, Jewish synagogue, Chinese fishing net and the grave of Vasco Da Gama the famous Portuguese sailor.',
         image:
-          'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/obwycfunza05h5pfljpf',
-        category: 'HillStation',
-      },
-      {
-        id: 'alappuzha',
-        place: 'Alappuzha',
-        description:
-          'Alleppey also known as the Venice of the East is listed as one of the top honeymoon destinations in the world by National Geographic, laid remarkable name in attracting tourists. Well known for the large networks of canals connecting small island villages. Tourists can enjoy shikara boating, house boats and motor boat cruise through the lake watching the paddy fields and endless views of coconut lagoons. The beaches of alleppey and Ravi Karunakaran museum are must see places in Alleppey.',
-        image:
-          'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/pix2jbufjgqetgdwqchj',
-        category: 'Backwaters',
-      },
-      {
-        id: 'thekkady',
-        place: 'Thekkady',
-        description:
-          'The place is famous for its Wild life located in the border of Kerala and Tamilnadu. The nearby town is Kumily where travellers can purchase fresh and genuine spices directly from the local traders. The main attractions of thekkady is the Periyar Tiger Reserve where you can enjoy the Wild life boating, Trekking, Bamboo Rafting and nature Walk. Travellers can enjoy watching Martial Art shows, Kathakali Show (Traditional Dance form), Tribal Dance etc.. You can explore the natural Beauty of dense forest by Jungle Jeep Safari and chose a massage centre to experience the Kerala Ayurvedic massage.',
-        image:
-          'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/aefrp2ovri012uiq0r0a',
-        category: 'Wildlife / Nature',
-      },
-      {
-        id: 'kovalam',
-        place: 'Kovalam',
-        description:
-          "Located in the vicinity of Kerala's capital city, Kovalam is famous for having many monuments of Travancore Kingdom and the place is also known as the land of padmanabha (Lord Vishnu). Recently got public attention for the treasures found in Padmanabhaswamy Temple, Visitors can explore the history of Travancore Kingdom from a couple of museums in the region. Other attractions are Kovalam Beach one of the calm beaches in South India, Trivandrum Zoo, Pridarsheny Planetarium, Poovar Estuary Island and Veli Boat Club where travellers can have some adventures water sports.",
-        image:
-          'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/a3bap2ylviuxeol9mgs8',
+          'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/ae4mtinb0cacwj3f8uya',
         category: 'Beach',
-      },
-      {
-        id: 'vagamon',
-        place: 'Vagamon',
-        description:
-          'Vagamon hill station is situated 45 Km away from Thekkady. The place is one of the best hideouts for honeymoon couples and travellers who expects relaxation and to stay undisturbed from maddening crowd. Vagamon has a fantastic view of Western Ghats, tea plantations and enhancing pine forests. It’s an upcoming tourist destination and not much explored by travellers.The fog, green meadows and small streams will cool your eyes and refresh your mind.',
-        image:
-          'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/nuoolmdwoip1kexfh5kg',
-        category: 'Hill Station',
-      },
-      {
-        id: 'kanyakumari',
-        place: 'Kanyakumari',
-        description:
-          'The southern tip of India lays in the neighbouring state Tamilnadu. It’s the meeting point of the great Indian Ocean and the Arabian Sea. Kanyakumari is just 80 Km drive from Trivandrum. The place is famous for its unique Sun Set and Sun Rise View. The boating through the sea towards Vivekananda rock is a great experience, and it’s a famous pilgrim centre and visitors will not miss the Kanyakumari Devi Temple and the multi-coloured sands on the beach. ',
-        image:
-          'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/fnwf5jrgpkygxpnzlwss',
-        category: 'Beach / Sunrise',
-      },
-      {
-        id: 'kollam',
-        place: 'Thenmala',
-        description:
-          "Thenmala, located in the eastern part of Kerala, India, is known as India's first planned ecotourism destination. Nestled amidst the Western Ghats, it offers a captivating blend of natural beauty, cultural heritage, and adventure activities",
-        image:
-          'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/k2qmsteciyxvwawb6qbs',
-        category: 'Eco Tourism',
       },
     ];
     const result = await db.touristPlace.createMany({ data: data });
@@ -158,8 +104,208 @@ export const addSightSeeing = async (formData: FormData) => {
   const result = await db.sightSeeingSpots.createMany({ data: data });
   return result;
 };
+/**
+ * Adding carousel images for cars
+ * @param formData
+ * @returns
+ */
 
 export const addCarouselImages = async (formData: FormData) => {
+  'use server';
+  const data = [
+    {
+      id: 'traveller_ultra_luxury_08',
+      vehicle_type: 'traveller',
+      title: 'ULTRA LUXURY TEMPO TRAVELLER IMAGES',
+      list: [
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/glwbzppvwrqlmlfs7hnm',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/j3ncafbvumzzg0sau245',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/yevhmurjudhwjz63pkhi',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/hnmhphfn9vd0nddosku2',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/traveller_1',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/inside_2',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/j3ncafbvumzzg0sau245',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/chi36huby8tlul2nbvz3',
+      ],
+    },
+    {
+      id: 'traveller_ultra_luxury_10',
+      vehicle_type: 'traveller',
+      title: '10 SEATER LUXURY TEMPO TRAVELLER IMAGES',
+      list: [
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/traveller_2',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/euf1asoo8ozsxg1prz42',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/dj4jd0rqjjzqvq0is1oh',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/f8ppiwq0u5wobuwnbfm6',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/jhx7gyldxejlbmq6jtlj',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/s1bx3ed4grfujssv0xt6',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/k8kqmmrkbbs9ksgultw2',
+      ],
+    },
+    {
+      id: 'traveller_premium_10',
+      vehicle_type: 'traveller',
+      title: '10 SEATER PREMIUM TEMPO TRAVELLER IMAGES',
+      list: [
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/ivygitotxycfzxibrivd',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/zmboxeuuxb9sx2lvhnb0',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/tbtcv5ouq8atoxaimc29',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/traveller_2',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/traveller_3',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/jgbaw4yifjdd2vpvx7uk',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/a2ny9xm7mvmfib9rprso',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/chi36huby8tlul2nbvz3',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/ivygitotxycfzxibrivd',
+      ],
+    },
+    {
+      id: 'traveller_premium_12',
+      vehicle_type: 'traveller',
+      title: '10-12 SEATER EXECUTIVE TEMPO TRAVELLER IMAGES',
+      list: [
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/jgbaw4yifjdd2vpvx7uk',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/traveller_2',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/ez2mrbrjsb7bear64wmx',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/dj4jd0rqjjzqvq0is1oh',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/f8ppiwq0u5wobuwnbfm6',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/jhx7gyldxejlbmq6jtlj',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/s1bx3ed4grfujssv0xt6',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/k8kqmmrkbbs9ksgultw2',
+      ],
+    },
+    {
+      id: 'traveller_premium_17',
+      vehicle_type: 'traveller',
+      title: '17 SEATER PREMIUM TEMPO TRAVELLER IMAGES',
+      list: [
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/traveller_2',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/euf1asoo8ozsxg1prz42',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/dj4jd0rqjjzqvq0is1oh',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/f8ppiwq0u5wobuwnbfm6',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/jhx7gyldxejlbmq6jtlj',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/s1bx3ed4grfujssv0xt6',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/k8kqmmrkbbs9ksgultw2',
+      ],
+    },
+    {
+      id: 'traveller_premium_20',
+      title: '20 SEATER PREMIUM TEMPO TRAVELLER IMAGES',
+      vehicle_type: 'traveller',
+      list: [
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/traveller_5',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/euf1asoo8ozsxg1prz42',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/dj4jd0rqjjzqvq0is1oh',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/traveller_6',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/k8kqmmrkbbs9ksgultw2',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/jhx7gyldxejlbmq6jtlj',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/s1bx3ed4grfujssv0xt6',
+      ],
+    },
+    {
+      id: 'traveller_premium_26',
+      title: '26 SEATER PREMIUM TEMPO TRAVELLER IMAGES',
+      vehicle_type: 'traveller',
+      list: [
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/hyuiiiw4zccol9jatwhj',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/euf1asoo8ozsxg1prz42',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/dj4jd0rqjjzqvq0is1oh',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/traveller_4',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/jhx7gyldxejlbmq6jtlj',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/s1bx3ed4grfujssv0xt6',
+      ],
+    },
+    {
+      id: 'traveller_executive_12',
+      vehicle_type: 'traveller',
+      title: '12 SEATER EXECUTIVE TEMPO TRAVELLER IMAGES',
+      list: [
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/traveller_2',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/euf1asoo8ozsxg1prz42',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/dj4jd0rqjjzqvq0is1oh',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/f8ppiwq0u5wobuwnbfm6',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/jhx7gyldxejlbmq6jtlj',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/s1bx3ed4grfujssv0xt6',
+      ],
+    },
+    {
+      id: 'traveller_executive_17',
+      vehicle_type: 'traveller',
+      title: '17 SEATER EXECUTIVE TEMPO TRAVELLER IMAGES',
+      list: [
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/traveller_2',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/euf1asoo8ozsxg1prz42',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/dj4jd0rqjjzqvq0is1oh',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/f8ppiwq0u5wobuwnbfm6',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/jhx7gyldxejlbmq6jtlj',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/s1bx3ed4grfujssv0xt6',
+      ],
+    },
+    {
+      id: 'traveller_executive_20',
+      vehicle_type: 'traveller',
+      title: '20 SEATER EXECUTIVE TEMPO TRAVELLER IMAGES',
+      list: [
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/rmup4b6wvkg3rh1iepwu',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/euf1asoo8ozsxg1prz42',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/dj4jd0rqjjzqvq0is1oh',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/f8ppiwq0u5wobuwnbfm6',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/jhx7gyldxejlbmq6jtlj',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/s1bx3ed4grfujssv0xt6',
+      ],
+    },
+    {
+      id: 'traveller_executive_26',
+      vehicle_type: 'traveller',
+      title: '26 SEATER EXECUTIVE TEMPO TRAVELLER IMAGES',
+      list: [
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/traveller_2',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/euf1asoo8ozsxg1prz42',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/or9qny9fxtczbepwvo3r',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/f8ppiwq0u5wobuwnbfm6',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/jhx7gyldxejlbmq6jtlj',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/traveller/s1bx3ed4grfujssv0xt6',
+      ],
+    },
+  ];
+  const result = await db.carouselImages.createMany({ data: data });
+  return result;
+};
+
+export const addCarouselImagesUrbania = async (formData: FormData) => {
+  'use server';
+  const data = [
+    {
+      id: 'urbania_15_premium',
+      vehicle_type: 'urbania',
+      title: '15 SEATER PREMIUM URBANIA IN KERALA',
+      list: [
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/nff58q9vbs5gd8n5l1nl',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/zp5vnssxozioffctpqoe',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/lui6keqwuzn7cabnrkim',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/dzx6d0qbubi7ewctmktm',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/bmucesyidjtbpq5okrcb',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/dzx6d0qbubi7ewctmktm',
+      ],
+    },
+    {
+      id: 'urbania_15_luxury',
+      title: '15 SEATER LUXURY URBANIA IN KERALA',
+      vehicle_type: 'urbania',
+      list: [
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/nff58q9vbs5gd8n5l1nl',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/zp5vnssxozioffctpqoe',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/lui6keqwuzn7cabnrkim',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/dzx6d0qbubi7ewctmktm',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/bmucesyidjtbpq5okrcb',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/urbania/dzx6d0qbubi7ewctmktm',
+      ],
+    },
+  ];
+  const result = await db.carouselImages.createMany({ data: data });
+  return result;
+};
+
+export const addCarouselImagesBus = async (formData: FormData) => {
   'use server';
   const data = [
     {

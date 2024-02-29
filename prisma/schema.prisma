@@ -51,3 +51,12 @@ model User {
   email                  String                   @unique @db.VarChar
   
 }
+
+model VehiclesMaster {
+  id          String   @id @default(cuid())
+  name        String
+  vehicle_type String
+  description String
+  pax         Int
+  extra_per_km Int
+}

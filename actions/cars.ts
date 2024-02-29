@@ -1,5 +1,6 @@
 import { kv } from '@vercel/kv';
 import { RateList } from './traveller';
+import { db } from '@/lib/db';
 
 /**
  * Gets all cars avaiable
@@ -7,7 +8,12 @@ import { RateList } from './traveller';
  * @returns
  */
 export default async function getAllCars(id?: string) {
-  const result: any = await kv.get('cars');
+  'use server';
+  const result: any = await db.vehiclesMaster.findMany({
+    where: {
+      vehicle_type: 'car',
+    },
+  });
   return id ? result?.filter((i: any) => i.id === id) : result;
 }
 
