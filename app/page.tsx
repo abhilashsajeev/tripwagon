@@ -8,6 +8,7 @@ import { StatsGroup } from '@/components/StatusGroup/StatusGroup';
 import { getReviews } from '@/actions/bus';
 import TestimonialCarousel from '@/components/Carousel/Testimonial';
 import { TaxiPackagesCarousel } from '@/components/Carousel/TaxiPackagesCarousel';
+import ServerCarousel from '@/components/Carousel/ServerCarousel';
 
 const taxiData = [
   {
@@ -58,6 +59,16 @@ export default async function HomePage() {
       <Suspense fallback={<LoadingSkleton />}>
         <GetInTouch />
       </Suspense>
+      <ServerCarousel
+        title="Happy Customers"
+        data={[
+          'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/enqyhgentwj1etwxehcn',
+          'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/customers/nyn0vpxuc6hbp1lxkddz',
+          'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/customers/bzjitcbhc2krzbkvvvld',
+          'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/customers/k5n0ptylg7meebzfenpq',
+          'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/customers/lewkwqqfsw9pdkju8bnb',
+        ]}
+      />
     </>
   );
 }

@@ -1,9 +1,9 @@
-import { addDefaultValues } from '@/actions/places';
+import { addCarouselImageInnova } from '@/actions/places';
 
 export default function AddPlaceForm() {
   return (
     <>
-      <form action={addDefaultValues}>
+      <form action={addCarouselImageInnova}>
         <label>Id</label>
         <input name="id" type="text" />
         <label>Place</label>

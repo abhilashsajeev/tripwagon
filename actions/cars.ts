@@ -7,7 +7,7 @@ import { db } from '@/lib/db';
  * @param id
  * @returns
  */
-export default async function getAllCars(id?: string) {
+export async function getAllCars(id?: string) {
   'use server';
   const result: any = await db.vehiclesMaster.findMany({
     where: {
@@ -15,6 +15,16 @@ export default async function getAllCars(id?: string) {
     },
   });
   return id ? result?.filter((i: any) => i.id === id) : result;
+}
+
+export async function getCarCarouselImages() {
+  'use server';
+  const result = await db.carouselImages.findMany({
+    where: {
+      vehicle_type: 'car',
+    },
+  });
+  return result;
 }
 
 /**

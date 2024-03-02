@@ -56,47 +56,245 @@ export const addSightSeeing = async (formData: FormData) => {
   'use server';
   const data = [
     {
-      id: 27,
-      place_id: 'kanyakumari',
-      sight_name: 'KANYAKUMARI BEACH',
+      id: 1,
+      place_id: 'kochi',
+      sight_name: 'KERALA KATHAKALI CENTRE',
       sight_image:
-        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/sightseeing/fnahrgqh8ejokmzlbiyh',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/sightseeing/o9djorcg6tbzz23zp4cy',
       carousel_images: [],
       location: '',
     },
     {
-      id: 29,
-      place_id: 'kanyakumari',
-      sight_name: 'VIVEKANADA ROCK',
+      id: 2,
+      place_id: 'kochi',
+      sight_name: 'EDAPPALI CHURCH',
       sight_image:
-        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/sightseeing/xkcxdvqfqndeby9rajri',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/sightseeing/fvrvw4uzeuhw46fkmxca',
       carousel_images: [],
       location: '',
     },
     {
-      id: 30,
-      place_id: 'kanyakumari',
-      sight_name: 'THIRUVALLUAVAR STATUTE',
+      id: 3,
+      place_id: 'kochi',
+      sight_name: 'KASHI ART GALLERY',
       sight_image:
-        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/sightseeing/xsb1qcq44k6s26mpdm0k',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/sightseeing/uml1z7hpiq7fnojuxvly',
       carousel_images: [],
       location: '',
     },
     {
-      id: 31,
-      place_id: 'kanyakumari',
-      sight_name: 'THANUMALAYAN TEMPLE',
+      id: 4,
+      place_id: 'kochi',
+      sight_name: 'CHERAI BEACH',
       sight_image:
-        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/sightseeing/atfz3zhopgs4kp5ew2ec',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/sightseeing/rhrl7wqyacxhkbae4pi2',
       carousel_images: [],
       location: '',
     },
     {
-      id: 32,
-      place_id: 'kanyakumari',
-      sight_name: 'PADMANABHAPURAM PALACE',
+      id: 5,
+      place_id: 'kochi',
+      sight_name: 'KERALA FOLKLORE MUSEUM',
       sight_image:
-        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/sightseeing/n8qu0ynppcx2axnegdkc',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/sightseeing/sntlgmwa4010qjbsfk40',
+      carousel_images: [],
+      location: '',
+    },
+    {
+      id: 6,
+      place_id: 'thekkady',
+      sight_name: 'KALARI CENTRE',
+      sight_image:
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/sightseeing/e3wjkteyk9soeywydyw4',
+      carousel_images: [],
+      location: '',
+    },
+    {
+      id: 7,
+      place_id: 'thekkady',
+      sight_name: 'SPICE GARDEN',
+      sight_image:
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/sightseeing/ab9fw38jpbtsjjwotuet',
+      carousel_images: [],
+      location: '',
+    },
+    {
+      id: 8,
+      place_id: 'thekkady',
+      sight_name: 'PERIYAR LAKE',
+      sight_image:
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/sightseeing/oqgy8iluml32rydq1ne3',
+      carousel_images: [],
+      location: '',
+    },
+    {
+      id: 9,
+      place_id: 'thekkady',
+      sight_name: 'PERIYAR WILDLIFE SANCTURY',
+      sight_image:
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/sightseeing/eodg3gpobyuxj6kdjicm',
+      carousel_images: [],
+      location: '',
+    },
+    {
+      id: 10,
+      place_id: 'alappuzha',
+      sight_name: 'HOUSE BOATS',
+      sight_image:
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/sightseeing/grkdoczhuhtexchjvgyb',
+      carousel_images: [],
+      location: '',
+    },
+    {
+      id: 11,
+      place_id: 'alappuzha',
+      sight_name: 'INTERNATIONAL COIR MUSEUM',
+      sight_image:
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/sightseeing/fewsfz87ia2laptfhbyr',
+      carousel_images: [],
+      location: '',
+    },
+    {
+      id: 12,
+      place_id: 'alappuzha',
+      sight_name: 'BOATING',
+      sight_image:
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/sightseeing/enlge1yew233gbp6i9bb',
+      carousel_images: [],
+      location: '',
+    },
+    {
+      id: 13,
+      place_id: 'alappuzha',
+      sight_name: 'REVI KARUNAKARAN MEMORIAL MUSEUM',
+      sight_image:
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/sightseeing/xrnkffpgrcj438fswaed',
+      carousel_images: [],
+      location: '',
+    },
+    {
+      id: 14,
+      place_id: 'munnar',
+      sight_name: 'ATTUKAL WATERFALLS',
+      sight_image:
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/sightseeing/xrnkffpgrcj438fswaed',
+      carousel_images: [],
+      location: '',
+    },
+    {
+      id: 15,
+      place_id: 'munnar',
+      sight_name: 'MATTUPETTY RESERVOIR',
+      sight_image:
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/sightseeing/xwfo1zd2a4upxviz9khk',
+      carousel_images: [],
+      location: '',
+    },
+    {
+      id: 16,
+      place_id: 'munnar',
+      sight_name: 'ERAVIKULAM NATIONAL PARK',
+      sight_image:
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/sightseeing/l3cks8jx4elktax6bufz',
+      carousel_images: [],
+      location: '',
+    },
+    {
+      id: 17,
+      place_id: 'munnar',
+      sight_name: 'KOLUKKUMALAI TEA ESTATE',
+      sight_image:
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/sightseeing/dd5a9j3srxycy6ssw5s3',
+      carousel_images: [],
+      location: '',
+    },
+    {
+      id: 18,
+      place_id: 'vagamon',
+      sight_name: 'BARREN HILLS',
+      sight_image:
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/sightseeing/lrzu8vwrdwm4vapmus4a',
+      carousel_images: [],
+      location: '',
+    },
+    {
+      id: 19,
+      place_id: 'vagamon',
+      sight_name: 'PINE FOREST',
+      sight_image:
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/sightseeing/tzh2sqezcfgnwdv1uiim',
+      carousel_images: [],
+      location: '',
+    },
+    {
+      id: 33,
+      place_id: 'vagamon',
+      sight_name: 'VAGAMON LAKE',
+      sight_image:
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/sightseeing/lzmydvc7qn5yn10rftm5',
+      carousel_images: [],
+      location: '',
+    },
+    {
+      id: 20,
+      place_id: 'vagamon',
+      sight_name: 'VAGAMON KURISHUMALA',
+      sight_image:
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/sightseeing/o9i6unotm0ymvus9cfe4',
+      carousel_images: [],
+      location: '',
+    },
+    {
+      id: 21,
+      place_id: 'kovalam',
+      sight_name: 'PADMANABHASWAMY TEMPLE',
+      sight_image:
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/sightseeing/soed1msn4vfrkrsjywn8',
+      carousel_images: [],
+      location: '',
+    },
+    {
+      id: 22,
+      place_id: 'kovalam',
+      sight_name: 'KOVALAM LIGHT HOUSE',
+      sight_image:
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/sightseeing/liqk5i64hluxmeactmpg',
+      carousel_images: [],
+      location: '',
+    },
+    {
+      id: 23,
+      place_id: 'kovalam',
+      sight_name: 'KOVALAM BEACH',
+      sight_image:
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/sightseeing/nv4lsdivurfaidajtrsc',
+      carousel_images: [],
+      location: '',
+    },
+    {
+      id: 24,
+      place_id: 'kovalam',
+      sight_name: 'POOVAR BACKWATERS',
+      sight_image:
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/sightseeing/dcnwj0eowhcunkqtwbee',
+      carousel_images: [],
+      location: '',
+    },
+    {
+      id: 25,
+      place_id: 'kollam',
+      sight_name: 'JADAYU STATUE',
+      sight_image:
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/sightseeing/dcnwj0eowhcunkqtwbee',
+      carousel_images: [],
+      location: '',
+    },
+    {
+      id: 26,
+      place_id: 'kollam',
+      sight_name: 'THENMALA ECO TOURISM',
+      sight_image:
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/places/sightseeing/dcnwj0eowhcunkqtwbee',
       carousel_images: [],
       location: '',
     },
@@ -371,6 +569,70 @@ export const addCarouselImagesBus = async (formData: FormData) => {
         'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/bus_new/pcqpd5d2ampudrcwvm9m',
         'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/bus_new/biqz7qqhbinoktb3ug9h',
         'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/bus_new/ihairm1yj3brtcabyqy4',
+      ],
+    },
+  ];
+  const result = await db.carouselImages.createMany({ data: data });
+  return result;
+};
+
+export const addCarouselImagesSedan = async (formData: FormData) => {
+  'use server';
+  const data = [
+    {
+      id: 'sedan_taxi',
+      vehicle_type: 'car',
+      title: 'SEDAN / SWIFT DEZIRE',
+      list: [
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/swift/mcyvy6yunwxdmrfgn9vk',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/swift/b148q8cxhqzkjqbtpwpl',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/swift/yrui6barte93wx7kguhm',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/swift/iqgxasw6zgtvt1w6zs1d',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/swift/dnywcbneedh9u1beiwqf',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/swift/xneqil1mxay9jmuktjkv',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/swift/ntykdbps1wwgr6hworw2',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/swift/gn7unydh9vlwha3aqvzt',
+      ],
+    },
+  ];
+  const result = await db.carouselImages.createMany({ data: data });
+  return result;
+};
+
+export const addCarouselImagesCrysta = async (formData: FormData) => {
+  'use server';
+  const data = [
+    {
+      id: 'crysta',
+      vehicle_type: 'car',
+      title: 'INNOVA CRYSTA',
+      list: [
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/2',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/crysta_2',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/inside_1',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/crysta_6',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/eel1ma5vsyngfoluhe6e',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/uwxgz90deehf6tamlztj',
+      ],
+    },
+  ];
+  const result = await db.carouselImages.createMany({ data: data });
+  return result;
+};
+export const addCarouselImageInnova = async (formData: FormData) => {
+  'use server';
+  const data = [
+    {
+      id: 'innova',
+      vehicle_type: 'car',
+      title: 'TOYOTA INNOVA',
+      list: [
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/c_crop,g_auto,h_800,w_800/cars/sm5z79zky2mriqznu1ey.jpg',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/innova_1',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/group_1',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/cz1dxshl7omq2dwqso3c',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/auucanvywfnvzwjzzq8j',
+        'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/cars/xfmh5ujwcb0kfctvmj2k',
       ],
     },
   ];

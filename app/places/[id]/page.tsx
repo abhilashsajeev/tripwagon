@@ -1,5 +1,6 @@
 import { PlaceDataType, getPlaceWithId, getSightsBasedonId } from '@/actions/places';
 import { SightSeeingCarousel } from '@/components/Carousel/SightSeeingCarousel';
+import CallUsNowButtons from '@/components/GetInTouch/CallUsNowButton';
 import PlaceBanner from '@/components/PlaceDescription/PlaceBanner';
 
 export default async function Page({ params }: any) {
@@ -11,6 +12,7 @@ export default async function Page({ params }: any) {
       <PlaceBanner result={result} />
 
       <SightSeeingCarousel data={sights} />
+      <CallUsNowButtons />
     </>
   );
 }
