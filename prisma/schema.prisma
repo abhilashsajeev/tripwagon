@@ -60,3 +60,13 @@ model VehiclesMaster {
   pax         Int
   extra_per_km Int
 }
+
+
+model VehicleRates {
+  id          Int      @id @default(autoincrement()) 
+  number_of_days String 
+  max_km       Int
+  vehicle_id String
+  ac_rate      Int
+  bata         Int
+}

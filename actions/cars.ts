@@ -33,6 +33,10 @@ export async function getCarCarouselImages() {
  * @returns
  */
 export const getRateTableForId = async (id: string) => {
-  const result: RateList[] | null = await kv.get(id);
+  const result: RateList[] | null = await db.vehicleRates.findMany({
+    where: {
+      vehicle_id: id,
+    },
+  });
   return result;
 };

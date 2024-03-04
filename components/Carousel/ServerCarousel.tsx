@@ -5,7 +5,7 @@ import { Carousel } from '@mantine/carousel';
 import classes from './TaxiCarousel.module.css';
 import { quicksand } from '@/app/font';
 
-export default function ServerCarousel({ data, title }: any) {
+export default function ServerCarousel({ data, title, size }: any) {
   const theme = useMantineTheme();
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
   const slides = data?.map((item: string) => (
@@ -17,7 +17,9 @@ export default function ServerCarousel({ data, title }: any) {
   return (
     <>
       <Center>
-        <Text className={quicksand.className}>{title}</Text>
+        <Title size={size || 'h5'} className={quicksand.className}>
+          {title}
+        </Title>
       </Center>
       <Carousel
         slideSize={{ base: '100%', sm: '50%', md: '25%' }}

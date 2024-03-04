@@ -13,6 +13,7 @@ export interface Traveller {
 export interface RateList {
   id: number;
   number_of_days: string;
+  vehicle_id?: string;
   max_km: number;
   ac_rate: number;
   bata: number;

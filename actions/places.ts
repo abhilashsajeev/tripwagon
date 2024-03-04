@@ -660,6 +660,271 @@ export const getPlaceWithId = async (id: string): Promise<PlaceDataType | null> 
   }
 };
 
+export const saveVehicleRatesCar = async (formData: FormData) => {
+  'use server';
+  try {
+    const data = [
+      {
+        number_of_days: '1 night - 2 days',
+        vehicle_id: 'sedan_taxi',
+        max_km: 160,
+        ac_rate: 3200,
+        bata: 1200,
+      },
+      {
+        number_of_days: '2 nights - 3 days',
+        max_km: 300,
+        vehicle_id: 'sedan_taxi',
+        ac_rate: 4800,
+        bata: 1800,
+      },
+      {
+        number_of_days: '3 nights - 4 days',
+        vehicle_id: 'sedan_taxi',
+        max_km: 400,
+        ac_rate: 6400,
+        bata: 2400,
+      },
+      {
+        number_of_days: '4 nights - 5 days',
+        vehicle_id: 'sedan_taxi',
+        max_km: 500,
+        ac_rate: 8000,
+        bata: 3000,
+      },
+      {
+        number_of_days: '5 nights - 6 days',
+        vehicle_id: 'sedan_taxi',
+        max_km: 600,
+        ac_rate: 9600,
+        bata: 3600,
+      },
+      {
+        number_of_days: '6 nights - 7 days',
+        vehicle_id: 'sedan_taxi',
+        max_km: 700,
+        ac_rate: 11200,
+        bata: 4200,
+      },
+      {
+        number_of_days: '7 nights - 8 days',
+        vehicle_id: 'sedan_taxi',
+        max_km: 800,
+        ac_rate: 12800,
+        bata: 4800,
+      },
+      {
+        number_of_days: '8 nights - 9 days',
+        max_km: 900,
+        vehicle_id: 'sedan_taxi',
+        ac_rate: 14400,
+        bata: 5400,
+      },
+      {
+        number_of_days: '9 nights - 10 days',
+        vehicle_id: 'sedan_taxi',
+        max_km: 1000,
+        ac_rate: 16000,
+        bata: 6000,
+      },
+      {
+        number_of_days: '1 night - 2 days',
+        vehicle_id: 'suzuki_ertiga',
+        max_km: 160,
+        ac_rate: 3800,
+        bata: 1200,
+      },
+      {
+        number_of_days: '2 nights - 3 days',
+        vehicle_id: 'suzuki_ertiga',
+        max_km: 300,
+        ac_rate: 5700,
+        bata: 1800,
+      },
+      {
+        number_of_days: '3 nights - 4 days',
+        vehicle_id: 'suzuki_ertiga',
+        max_km: 400,
+        ac_rate: 7600,
+        bata: 2400,
+      },
+      {
+        number_of_days: '4 nights - 5 days',
+        vehicle_id: 'suzuki_ertiga',
+        max_km: 500,
+        ac_rate: 9500,
+        bata: 3000,
+      },
+      {
+        number_of_days: '5 nights - 6 days',
+        vehicle_id: 'suzuki_ertiga',
+        max_km: 600,
+        ac_rate: 11400,
+        bata: 3600,
+      },
+      {
+        number_of_days: '6 nights - 7 days',
+        vehicle_id: 'suzuki_ertiga',
+        max_km: 700,
+        ac_rate: 13300,
+        bata: 4200,
+      },
+      {
+        number_of_days: '7 nights - 8 days',
+        vehicle_id: 'suzuki_ertiga',
+        max_km: 800,
+        ac_rate: 15200,
+        bata: 4800,
+      },
+      {
+        number_of_days: '8 nights - 9 days',
+        vehicle_id: 'suzuki_ertiga',
+        max_km: 900,
+        ac_rate: 17100,
+        bata: 5400,
+      },
+      {
+        number_of_days: '9 nights - 10 days',
+        vehicle_id: 'suzuki_ertiga',
+        max_km: 1000,
+        ac_rate: 19000,
+        bata: 6000,
+      },
+      {
+        number_of_days: '1 night - 2 days',
+        vehicle_id: 'innova',
+        max_km: 160,
+        ac_rate: 4400,
+        bata: 1200,
+      },
+      {
+        vehicle_id: 'innova',
+        number_of_days: '2 nights - 3 days',
+        max_km: 300,
+        ac_rate: 6600,
+        bata: 1800,
+      },
+      {
+        vehicle_id: 'innova',
+        number_of_days: '3 nights - 4 days',
+        max_km: 400,
+        ac_rate: 8800,
+        bata: 2400,
+      },
+      {
+        vehicle_id: 'innova',
+        number_of_days: '4 nights - 5 days',
+        max_km: 500,
+        ac_rate: 11000,
+        bata: 3000,
+      },
+      {
+        vehicle_id: 'innova',
+        number_of_days: '5 nights - 6 days',
+        max_km: 600,
+        ac_rate: 13200,
+        bata: 3600,
+      },
+      {
+        vehicle_id: 'innova',
+        number_of_days: '6 nights - 7 days',
+        max_km: 700,
+        ac_rate: 15400,
+        bata: 4200,
+      },
+      {
+        vehicle_id: 'innova',
+        number_of_days: '7 nights - 8 days',
+        max_km: 800,
+        ac_rate: 17600,
+        bata: 4800,
+      },
+      {
+        vehicle_id: 'innova',
+        number_of_days: '8 nights - 9 days',
+        max_km: 900,
+        ac_rate: 19800,
+        bata: 5400,
+      },
+      {
+        vehicle_id: 'innova',
+        number_of_days: '9 nights - 10 days',
+        max_km: 1000,
+        ac_rate: 22000,
+        bata: 6000,
+      },
+      {
+        vehicle_id: 'crysta',
+        number_of_days: '1 night - 2 days',
+        max_km: 160,
+        ac_rate: 5400,
+        bata: 1200,
+      },
+      {
+        vehicle_id: 'crysta',
+        number_of_days: '2 nights - 3 days',
+        max_km: 300,
+        ac_rate: 8100,
+        bata: 1800,
+      },
+      {
+        vehicle_id: 'crysta',
+        number_of_days: '3 nights - 4 days',
+        max_km: 400,
+        ac_rate: 10800,
+        bata: 2400,
+      },
+      {
+        vehicle_id: 'crysta',
+        number_of_days: '4 nights - 5 days',
+        max_km: 500,
+        ac_rate: 13500,
+        bata: 3000,
+      },
+      {
+        vehicle_id: 'crysta',
+        number_of_days: '5 nights - 6 days',
+        max_km: 600,
+        ac_rate: 16200,
+        bata: 3600,
+      },
+      {
+        vehicle_id: 'crysta',
+        number_of_days: '6 nights - 7 days',
+        max_km: 700,
+        ac_rate: 18900,
+        bata: 4200,
+      },
+      {
+        vehicle_id: 'crysta',
+        number_of_days: '7 nights - 8 days',
+        max_km: 800,
+        ac_rate: 21600,
+        bata: 4800,
+      },
+      {
+        vehicle_id: 'crysta',
+        number_of_days: '8 nights - 9 days',
+        max_km: 900,
+        ac_rate: 24300,
+        bata: 5400,
+      },
+      {
+        vehicle_id: 'crysta',
+        number_of_days: '9 nights - 10 days',
+        max_km: 1000,
+        ac_rate: 27000,
+        bata: 6000,
+      },
+    ];
+    const result = await db.vehicleRates.createMany({ data: data });
+    return result;
+  } catch (e) {
+    console.log('Error in place', e);
+    return null;
+  }
+};
+
 export const saveNewPlace = async (formData: FormData) => {
   'use server';
   try {
