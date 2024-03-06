@@ -29,7 +29,14 @@ export default async function getAllBusTypes(id?: string) {
 }
 
 export const getRateTableForId = async (id: string) => {
-  const result: BusRate[] | null = await kv.get(id);
+  const result: BusRate[] | null = await db.vehicleRates.findMany({
+    where: {
+      vehicle_id: id,
+    },
+    orderBy: {
+      max_km: 'asc',
+    },
+  });
   return result;
 };
 

@@ -44,8 +44,9 @@ interface CarouselProps {
 export function TaxiPackagesCarousel({ data }: CarouselProps) {
   const theme = useMantineTheme();
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
+
   const slides = data.map((item: CarouselItem) => (
-    <Carousel.Slide key={item.id}>
+    <Carousel.Slide key={item.image + item.id}>
       <Card item={item} />
     </Carousel.Slide>
   ));

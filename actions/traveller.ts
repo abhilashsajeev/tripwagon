@@ -28,9 +28,20 @@ export default async function getAllTravelerInsideImages(id?: string) {
   });
   return id ? result?.filter((i: any) => i.id === id) : result;
 }
-
+/**
+ * Get rate table for id
+ * @param id
+ * @returns
+ */
 export const getRateTableForId = async (id: string) => {
-  const result: RateList[] | null = await kv.get(id);
+  const result: RateList[] | null = await db.vehicleRates.findMany({
+    where: {
+      vehicle_id: id,
+    },
+    orderBy: {
+      max_km: 'asc',
+    },
+  });
   return result;
 };
 

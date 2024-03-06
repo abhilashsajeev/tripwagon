@@ -1,9 +1,9 @@
-import { saveVehicleRatesCar } from '@/actions/places';
+import { saveUrbaniaDefaults } from '@/actions/places';
 
 export default function AddPlaceForm() {
   return (
     <>
-      <form action={saveVehicleRatesCar}>
+      <form action={saveUrbaniaDefaults}>
         <label>Id</label>
         <input name="id" type="text" />
         <label>Place</label>
