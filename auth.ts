@@ -22,6 +22,7 @@ export const {
     async signIn({ user, account }) {
       return true;
     },
+
     async session({ token, session }) {
       if (token.sub && session.user) {
         session.user.id = token.sub;
