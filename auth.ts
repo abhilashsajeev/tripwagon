@@ -19,12 +19,12 @@ export const {
   },
 
   callbacks: {
-    async signIn({ user, account }) {
+    async signIn() {
       return true;
     },
 
     async session({ token, session }) {
-      console.log('token in session function', token);
+      console.warn('session callback');
       if (token.sub && session.user) {
         session.user.id = token.sub;
       }
@@ -37,6 +37,7 @@ export const {
       return session;
     },
     async jwt({ token }) {
+      console.warn('jwt callback');
       if (!token.sub) return token;
 
       const existingUser = await getUserById(token.sub);
