@@ -22,6 +22,7 @@ export default {
           if (!user || !user.password) return null;
 
           const passwordsMatch = await bcrypt.compare(password, user.password);
+          console.log('passwordmatch status', passwordsMatch);
           if (passwordsMatch) return user;
         }
 
