@@ -29,6 +29,7 @@ export default async function getAllBusTypes(id?: string) {
 }
 
 export const getRateTableForId = async (id: string) => {
+  'use server';
   const result: BusRate[] | null = await db.vehicleRates.findMany({
     where: {
       vehicle_id: id,
@@ -55,5 +56,19 @@ export const getBusCarouselImages = async (id?: string) => {
 
 export const getReviews = async () => {
   const result: any = await kv.get('reviews');
+  return result;
+};
+
+/**
+ * Get vehicle by id generic master
+ * @param id
+ * @returns
+ */
+export const getVehicleById = async (id: string) => {
+  const result: any = await db.vehiclesMaster.findMany({
+    where: {
+      id: id,
+    },
+  });
   return result;
 };
