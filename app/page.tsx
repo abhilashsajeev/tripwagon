@@ -56,9 +56,9 @@ export default async function HomePage() {
       <FeaturesGrid />
       <TaxiPackagesCarousel data={taxiData} />
       <TestimonialCarousel data={reviews} title="Testimonials" />
-      <Suspense fallback={<LoadingSkleton />}>
-        <GetInTouch />
-      </Suspense>
+
+      <GetInTouch />
+
       <ServerCarousel
         title="Happy Customers"
         data={[
