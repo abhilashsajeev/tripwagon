@@ -55,8 +55,13 @@ export const getBusCarouselImages = async (id?: string) => {
 };
 
 export const getReviews = async () => {
+  try {
   const result: any = await kv.get('reviews');
   return result;
+  } catch (error) {
+    console.log(error);
+    return [];
+  }
 };
 
 /**

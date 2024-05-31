@@ -1887,4 +1887,7 @@ export const DefaultReviews = async () => {
     },
   ];
   await kv.set('reviews', data);
+  console.log('Setting default values');
+  return data;
+  
 };

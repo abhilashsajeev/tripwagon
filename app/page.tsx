@@ -9,6 +9,7 @@ import { getReviews } from '@/actions/bus';
 import TestimonialCarousel from '@/components/Carousel/Testimonial';
 import { TaxiPackagesCarousel } from '@/components/Carousel/TaxiPackagesCarousel';
 import ServerCarousel from '@/components/Carousel/ServerCarousel';
+import { DefaultReviews } from '@/actions/defaultKv';
 
 const taxiData = [
   {
@@ -46,7 +47,9 @@ const taxiData = [
 ];
 
 export default async function HomePage() {
+  const reviewsadd = await DefaultReviews();
   const reviews = await getReviews();
+
   console.log('reviews ', reviews);
   return (
     <>

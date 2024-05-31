@@ -30,4 +30,5 @@ export default withBundleAnalyzer({
     optimizePackageImports: ['@mantine/core', '@mantine/hooks'],
     serverComponentsExternalPackages: ['bcryptjs'],
   },
+  trailingSlash: false,
 });

@@ -4,6 +4,7 @@
  * @type {string[]}
  */
 export const publicRoutes = [
+  "/",
   '/rentals',
   '/taxi',
   '/sabarimala',
@@ -24,7 +25,7 @@ export const publicRoutes = [
  * These routes will redirect logged in users to /settings
  * @type {string[]}
  */
-export const authRoutes = ['/', '/auth/login', '/auth/register', '/auth/error'];
+export const authRoutes = [ '/auth/login', '/auth/register', '/auth/error'];
 
 /**
  * The prefix for API authentication routes

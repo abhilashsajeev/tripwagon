@@ -1,4 +1,3 @@
-import { kv } from '@vercel/kv';
 import { RateList } from './traveller';
 import { db } from '@/lib/db';
 
