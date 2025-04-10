@@ -10,6 +10,8 @@ import TestimonialCarousel from '@/components/Carousel/Testimonial';
 import { TaxiPackagesCarousel } from '@/components/Carousel/TaxiPackagesCarousel';
 import ServerCarousel from '@/components/Carousel/ServerCarousel';
 import { DefaultReviews } from '@/actions/defaultKv';
+import Guide from '@/components/Guide/Guide';
+import LocalTaxiTable from '@/components/sabarimala/LocalTaxiTable';
 
 const taxiData = [
   {
@@ -102,6 +104,8 @@ export default async function HomePage() {
     <>
       <HeroImageBackground />
       <WhatsAppFAB />
+      <Guide/>
+     
 
       <FeaturesGrid />
       <TaxiPackagesCarousel data={taxiData} />
@@ -119,6 +123,7 @@ export default async function HomePage() {
           'https://res.cloudinary.com/ds0bnfyym/image/upload/f_auto,q_auto/v1/customers/lewkwqqfsw9pdkju8bnb',
         ]}
       />
+      <LocalTaxiTable/>
     </>
   );
 }

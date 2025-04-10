@@ -24,7 +24,7 @@ export default async function RootLayout({ children }: { children: any }) {
       <html lang="en">
         <head>
           <ColorSchemeScript />
-          <link rel="shortcut icon" href="/favicon.svg" />
+          <link rel="shortcut icon" href="/favicon.ico" />
           <link rel="preload" href="/cars.webp" as="image" />
           <meta
             name="viewport"
