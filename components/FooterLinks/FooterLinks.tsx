@@ -70,8 +70,8 @@ export function FooterLinks() {
             src="/logo.webp"
             width={120}
             height={120}
-            about="TripWagon Logo"
-            alt="Trip Wagon Logo"
+            about="Rytham Logo"
+            alt="Rytham Logo"
           />
           <Text size="xs" c="dimmed" className={classes.description}>
             Make your next trip memmorable and safe with us.
@@ -81,7 +81,7 @@ export function FooterLinks() {
       </Container>
       <Container className={classes.afterFooter}>
         <Text c="dimmed" size="sm">
-          © 2024 tripwagon.com All rights reserved.
+          © 2025 rytham.in All rights reserved.
         </Text>
 
         <Group gap={0} className={classes.social} justify="flex-end" wrap="nowrap">

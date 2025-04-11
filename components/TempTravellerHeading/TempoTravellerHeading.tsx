@@ -18,7 +18,7 @@ export default function TempoTravellerHeading() {
       </Grid>
 
       <p>
-        TripWagon Holidays is the largest leading service provider of Kerala tempo travellers with
+        Rytham Holidays is the largest leading service provider of Kerala tempo travellers with
         our extensive fleet of exclusively owned vehicles, including executive, premium, and luxury
         tempo travellers in Kochi, and its specially trained drivers in tourism with good knowledge
         to provide safe travel throughout "God's Own Country".

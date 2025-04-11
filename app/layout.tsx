@@ -12,7 +12,7 @@ import { SessionProvider } from 'next-auth/react';
 import { auth } from '@/auth';
 
 export const metadata = {
-  title: 'TripWagon | Kerala Taxi Cab Services',
+  title: 'Rytham | Kerala Taxi Cab Services',
   description: 'High Quality and Most Affordable tour cabs services kerala',
 };
 

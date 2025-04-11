@@ -1871,11 +1871,11 @@ export const DefaultReviews = async () => {
   const data = [
     {
       reviewer: 'Kavir Bhati',
-      text: 'Service provided by TripWagon team was more from the expected level. My great experience started even before i begun my trip. They had upgraded my vehicle without any extra charges. Mr Sunil, the driver made the trip more memorable by bringing us to many different places.By that we went to more sights within short period of time.I would like to thank the whole team for their service. Keep up the good job.I would definitely recommend them',
+      text: 'Service provided by Rytham team was more from the expected level. My great experience started even before i begun my trip. They had upgraded my vehicle without any extra charges. Mr Sunil, the driver made the trip more memorable by bringing us to many different places.By that we went to more sights within short period of time.I would like to thank the whole team for their service. Keep up the good job.I would definitely recommend them',
     },
     {
       reviewer: 'Gopinath P',
-      text: 'We had trip from Cochin to Munnar to Thekkady to Cochin with Trip Wagon Holidays Kerala Taxi service. It was a nice trip with Gokul who taken care of our tour for entire 4 days. Very decent, very patience, very respectful. I will recommend this kochi taxi service company for my friends',
+      text: 'We had trip from Cochin to Munnar to Thekkady to Cochin with Rytham Holidays Kerala Taxi service. It was a nice trip with Gokul who taken care of our tour for entire 4 days. Very decent, very patience, very respectful. I will recommend this kochi taxi service company for my friends',
     },
     {
       reviewer: 'Manish Singhal',
@@ -1883,7 +1883,7 @@ export const DefaultReviews = async () => {
     },
     {
       reviewer: 'Kavir Bhati ',
-      text: 'Service provided by TripWagon team was more from the expected level. My great experience started even before i begun my trip. They had upgraded my vehicle without any extra charges. Mr Sunil, the driver made the trip more memorable by bringing us to many different places.By that we went to more sights within short period of time.I would like to thank the whole team for their service. Keep up the good job.I would definitely recommend them',
+      text: 'Service provided by Rytham team was more from the expected level. My great experience started even before i begun my trip. They had upgraded my vehicle without any extra charges. Mr Sunil, the driver made the trip more memorable by bringing us to many different places.By that we went to more sights within short period of time.I would like to thank the whole team for their service. Keep up the good job.I would definitely recommend them',
     },
   ];
   await kv.set('reviews', data);

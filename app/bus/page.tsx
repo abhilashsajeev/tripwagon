@@ -7,19 +7,19 @@ import RateTableComponent from '@/components/RateTable/RateTable';
 import BusHead from '@/components/bus/BusHead';
 
 export const metadata = {
-  title: 'Kerala Bus Rentals | TripWagon | Kerala Traveller Packages',
-  description: 'List of available Bus service packages with TripWagon',
+  title: 'Kerala Bus Rentals | Rytham | Kerala Traveller Packages',
+  description: 'List of available Bus service packages with Rytham',
   twitter: {
     card: 'https://res.cloudinary.com/dtgoc3cww/image/upload/f_auto,q_auto/v1/Logo/kpg21czdrjbzclztwj5r',
-    url: 'https://tripwagon.in/bus',
-    title: 'TripWagon | Kerala Traveller Packages',
-    description: 'List of available traveller service packages with TripWagon',
+    url: 'https://rytham.in/bus',
+    title: 'Rytham | Kerala Traveller Packages',
+    description: 'List of available traveller service packages with Rytham',
   },
   openGraph: {
-    title: 'Kerala Bus Rentals | TripWagon | Kerala Traveller Packages',
-    description: 'List of available Bus service packages with TripWagon',
-    url: 'https://tripwagon.in/bus',
-    siteName: 'TripWagon Taxi Service',
+    title: 'Kerala Bus Rentals | Rytham | Kerala Traveller Packages',
+    description: 'List of available Bus service packages with Rytham',
+    url: 'https://rytham.in/bus',
+    siteName: 'Rytham Taxi Service',
     images: [
       {
         url: 'https://res.cloudinary.com/dtgoc3cww/image/upload/f_auto,q_auto/v1/Logo/kpg21czdrjbzclztwj5r', // Must be an absolute URL
