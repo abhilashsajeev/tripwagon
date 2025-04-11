@@ -18,55 +18,53 @@ const ELEMENTS: any = [[
         displayname: 'Cochin Airport to Kasargod Taxi',
         link: '/kochi-airport-to-kasargod-taxi'
     },
+    {
+        keyval: 'kochi-airport-to-kollam-taxi',
+        displayname: 'Cochin Airport to Kollam Taxi',
+        link: '/kochi-airport-to-kollam-taxi'
+    },
 
 ], [
-
     {
-        keyval: 'kochi-airport-to-kannur-taxi',
-        displayname: 'Cochin Airport to Kannur Taxi',
-        link: '/kochi-airport-to-kannur-taxi'
+        keyval: 'kochi-airport-to-calicut-taxi',
+        displayname: 'Cochin Airport to Calicut Taxi',
+        link: '/kochi-airport-to-calicut-taxi'
     },
     {
-        keyval: 'kochi-airport-to-kannur-taxi',
-        displayname: 'Cochin Airport to Kannur Taxi',
-        link: '/kochi-airport-to-kannur-taxi'
+        keyval: 'kochi-airport-to-malappuram-taxi',
+        displayname: 'Cochin Airport to Malappuram Taxi',
+        link: '/kochi-airport-to-malappuram-taxi'
     },
     {
-        keyval: 'kochi-airport-to-kannur-taxi',
-        displayname: 'Cochin Airport to Kannur Taxi',
-        link: '/kochi-airport-to-kannur-taxi'
-    },
-], [
-    {
-        keyval: 'kochi-airport-to-kannur-taxi',
-        displayname: 'Cochin Airport to Kannur Taxi',
-        link: '/kochi-airport-to-kannur-taxi'
+        keyval: 'kochi-airport-to-munnar-taxi',
+        displayname: 'Cochin Airport to Munnar Taxi',
+        link: '/kochi-airport-to-munnar-taxi'
     },
     {
-        keyval: 'kochi-airport-to-kannur-taxi',
-        displayname: 'Cochin Airport to Kannur Taxi',
-        link: '/kochi-airport-to-kannur-taxi'
-    },
-    {
-        keyval: 'kochi-airport-to-kannur-taxi',
-        displayname: 'Cochin Airport to Kannur Taxi',
-        link: '/kochi-airport-to-kannur-taxi'
+        keyval: 'kochi-airport-to-palakkad-taxi',
+        displayname: 'Cochin Airport to Palakkad Taxi',
+        link: '/kochi-airport-to-palakkad-taxi'
     },
 ], [
     {
-        keyval: 'kochi-airport-to-kannur-taxi',
-        displayname: 'Cochin Airport to Kannur Taxi',
-        link: '/kochi-airport-to-kannur-taxi'
+        keyval: 'kochi-airport-to-pathanamthitta-taxi',
+        displayname: 'Cochin Airport to Pathanamthitta Taxi',
+        link: '/kochi-airport-to-pathanamthitta-taxi'
     },
     {
-        keyval: 'kochi-airport-to-kannur-taxi',
-        displayname: 'Cochin Airport to Kannur Taxi',
-        link: '/kochi-airport-to-kannur-taxi'
+        keyval: 'kochi-airport-to-ranni-taxi',
+        displayname: 'Cochin Airport to Ranni Taxi',
+        link: '/kochi-airport-to-ranni-taxi'
     },
     {
-        keyval: 'kochi-airport-to-kannur-taxi',
-        displayname: 'Cochin Airport to Kannur Taxi',
-        link: '/kochi-airport-to-kannur-taxi'
+        keyval: 'kochi-airport-to-trivandrum-taxi',
+        displayname: 'Cochin Airport to Trivandrum Taxi',
+        link: '/kochi-airport-to-trivandrum-taxi'
+    },
+    {
+        keyval: 'kochi-airport-to-waynad-taxi',
+        displayname: 'Cochin Airport to Waynad Taxi',
+        link: '/kochi-airport-to-waynad-taxi'
     },
 ]]
 
